@@ -1,7 +1,8 @@
 import {eyeColors, skinColors, hairColors, races} from "./datalists.js";
+import styles from "./Form.module.scss";
 
 const Form = () => (
-    <form action="." method="GET">
+    <form action="." method="GET" className={styles.Form}>
         <div>
             <input type="text"/>
             <label>
