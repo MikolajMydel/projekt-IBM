@@ -2,7 +2,28 @@ import {eyeColors, skinColors, hairColors, races} from "./datalists.js";
 import styles from "./CharacterForm.module.scss";
 import react from 'react';
 
+const extractFormData = (form, fields) => {
+    const formData = {};
+
+    for (let field of fields){
+        formData[field] = form[field].value;
+    }
+
+    return formData;
+}
 class CharacterForm extends react.Component {
+
+    fields = [
+        "name", "gender", "eyeColor", "race", "hairColor",
+        "skinColor", "height", "weight", "intelligence",
+        "strength", "speed", "durability", "power", "combat",
+    ]
+
+    onSubmit = (e) => {
+        e.preventDefault();
+        const characterInfo = extractFormData(e.target, this.fields);
+    }
+
     render() {
         return (
             <div className={styles.form_wrapper}>
