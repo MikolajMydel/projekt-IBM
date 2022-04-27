@@ -26,135 +26,137 @@ class CharacterForm extends react.Component {
 
     render() {
         return (
-            <form action="." method="GET"
-                className={styles.Form}
-                onSubmit={this.onSubmit}
-            >
-                <div>
-                    <input type="text" name="name" />
-                    <label>
-                        Name
-                    </label>
-                </div>
+            <div className={styles.form_wrapper}>
+                <form action="." method="GET"
+                    className={styles.Form}
+                >
+                    <div className={styles.form_group}>
+                        <input type="text" className={styles.form_input} placeholder=" "/>
+                        <label className={styles.form_label}>
+                            Name
+                        </label>
+                    </div>
 
-                <div>
-                    <input type="text" name="gender" />
-                    <label>
-                        Gender
-                    </label>
-                </div>
+                    <div className={styles.form_group}>
+                        <input type="text" className={styles.form_input} placeholder=" "/>
+                        <label className={styles.form_label}>
+                            Gender
+                        </label>
+                    </div>
 
-                <div>
-                    <input type="text" list="eyeColor" name="eyeColor" />
-                    <label>
-                        Eye color
-                    </label>
+                    <div className={styles.form_group}>
+                        <input type="text" list="eyeColor" className={styles.form_input} placeholder=" "/>
+                        <label className={styles.form_label}>
+                            Eye color
+                        </label>
 
-                    <datalist id="eyeColor">
-                        {eyeColors.map((value) => {
-                            return <option value={value.toLowerCase()} />
-                        })}
-                    </datalist>
-                </div>
-
-                <div>
-                    <input type="text" list="race" name="race" />
-                    <label>
-                        Race
-                    </label>
-
-                    <datalist id="race">
-                        {races.map((value) => {
-                            return <option value={value.toLowerCase()} />
-                        })}
-                    </datalist>
-                </div>
-
-                <div>
-                    <input type="text" list="hairColor" name="hairColor" />
-                    <label>
-                        Hair color
-                    </label>
-
-                    <datalist id="hairColor">
-                        {hairColors.map((value) => {
+                        <datalist id="eyeColor">
+                            {eyeColors.map((value) => {
                                 return <option value={value.toLowerCase()} />
-                        })}
-                    </datalist>
-                </div>
+                            })}
+                        </datalist>
+                    </div>
 
-                <div>
-                    <input type="text" list="skinColor" name="skinColor" />
-                    <label>
-                        Skin color
-                    </label>
+                    <div className={styles.form_group}>
+                        <input type="text" list="race" className={styles.form_input} placeholder=" "/>
+                        <label className={styles.form_label}>
+                            Race
+                        </label>
 
-                    <datalist id="skinColor">
-                        {skinColors.map((value) => {
+                        <datalist id="race">
+                            {races.map((value) => {
                                 return <option value={value.toLowerCase()} />
-                        })}
-                    </datalist>
-                </div>
+                            })}
+                        </datalist>
+                    </div>
 
-                <div>
-                    <input type="number" name="height"/>
-                    <label>
-                        Height
-                    </label>
-                </div>
+                    <div className={styles.form_group}>
+                        <input type="text" list="hairColor" className={styles.form_input} placeholder=" "/>
+                        <label className={styles.form_label}>
+                            Hair color
+                        </label>
 
-                <div>
-                    <input type="number" name="weight" />
-                    <label>
-                        Weight
-                    </label>
-                </div>
+                        <datalist id="hairColor">
+                            {hairColors.map((value) => {
+                                    return <option value={value.toLowerCase()} />
+                            })}
+                        </datalist>
+                    </div>
 
-                <div>
-                    <input type="range" name="intelligence" />
-                    <label>
-                        Intelligence
-                    </label>
-                </div>
+                    <div className={styles.form_group}>
+                        <input type="text" list="skinColor" className={styles.form_input} placeholder=" "/>
+                        <label className={styles.form_label}>
+                            Skin color
+                        </label>
 
-                <div>
-                    <input type="range" name="strength" />
-                    <label>
-                        Strength
-                    </label>
-                </div>
+                        <datalist id="skinColor">
+                            {skinColors.map((value) => {
+                                    return <option value={value.toLowerCase()} />
+                            })}
+                        </datalist>
+                    </div>
 
-                <div>
-                    <input type="range" name="speed" />
-                    <label>
-                        Speed
-                    </label>
-                </div>
+                    <div className={styles.form_group}>
+                        <input type="number" className={styles.form_input} placeholder=" "/>
+                        <label className={styles.form_label}>
+                            Height
+                        </label>
+                    </div>
 
-                <div>
-                    <input type="range" name="durability" />
-                    <label>
-                        Durability
-                    </label>
-                </div>
+                    <div className={styles.form_group}>
+                        <input type="number" className={styles.form_input} placeholder=" "/>
+                        <label className={styles.form_label}>
+                            Weight
+                        </label>
+                    </div>
 
-                <div>
-                    <input type="range" name="power" />
-                    <label>
-                        Power
-                    </label>
-                </div>
+                    <div className={styles.form_range}>
+                        <label>
+                            Intelligence
+                        </label><br/>
+                        <input type="range"/>
+                    </div>
 
-                <div>
-                    <input type="range" name="combat" />
-                    <label>
-                        Combat
-                    </label>
-                </div>
+                    <div className={styles.form_range}>
+                        <label>
+                            Strength
+                        </label><br/>
+                        <input type="range"/>
+                        
+                    </div>
 
-                <input type="submit" value="Check">
-                </input>
-            </form>
+                    <div className={styles.form_range}>
+                        <label>
+                            Speed
+                        </label><br/>
+                        <input type="range"/>
+                    </div>
+
+                    <div className={styles.form_range}>
+                        <label>
+                            Durability
+                        </label><br/>
+                        <input type="range"/>
+                    </div>
+
+                    <div className={styles.form_range}>
+                        <label>
+                            Power
+                        </label><br/>
+                        <input type="range"/>
+                    </div>
+
+                    <div className={styles.form_range}>
+                        <label>
+                            Combat
+                        </label><br/>
+                        <input type="range"/>
+                    </div>
+
+                    <input type="submit" value="Check" className={styles.form_button}>
+                    </input>
+                </form>
+            </div>
         )
     }
 }
