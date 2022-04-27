@@ -1,380 +1,380 @@
 Name,IsBad,Gender,EyeColor,Race,HairColor,SkinColor,Height,Weight,Intelligence,Strength,Speed,Durability,Power,Combat,Total
-A-Bomb,False,Male,yellow,Human,No Hair,-,203.0,441.0,38.0,100.0,17.0,80.0,17.0,64.0,316.0
-Abomination,True,Male,green,Human / Radiation,No Hair,-,203.0,441.0,63.0,80.0,53.0,90.0,55.0,95.0,436.0
-Abraxas,True,Male,blue,Cosmic Entity,Black,-,-99.0,-99.0,88.0,100.0,83.0,99.0,100.0,56.0,526.0
-Absorbing Man,True,Male,blue,Human,No Hair,-,193.0,122.0,,,,,,,
-Agent 13,False,Female,blue,-,Blond,-,173.0,61.0,,,,,,,
-Agent Bob,False,Male,brown,Human,Brown,-,178.0,81.0,10.0,8.0,13.0,5.0,5.0,20.0,61.0
-Agent Zero,False,Male,-,-,-,-,191.0,104.0,75.0,28.0,38.0,80.0,72.0,95.0,388.0
-Air-Walker,True,Male,blue,-,White,-,188.0,108.0,50.0,85.0,100.0,85.0,100.0,40.0,460.0
-Ajax,True,Male,brown,Cyborg,Black,-,193.0,90.0,,,,,,,
-Ammo,True,Male,brown,Human,Black,-,188.0,101.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Angel,False,Male,blue,-,Blond,-,183.0,68.0,63.0,13.0,46.0,64.0,17.0,42.0,245.0
-Angel Dust,False,Female,yellow,Mutant,Black,-,165.0,57.0,,,,,,,
-Angel Salvadore,False,Female,brown,-,Black,-,163.0,54.0,38.0,10.0,28.0,28.0,46.0,60.0,210.0
-Annihilus,True,Male,green,-,No Hair,-,180.0,90.0,75.0,80.0,47.0,56.0,59.0,64.0,381.0
-Ant-Man,False,Male,blue,Human,Blond,-,211.0,122.0,100.0,10.0,23.0,28.0,32.0,32.0,225.0
-Ant-Man II,False,Male,blue,Human,Blond,-,183.0,86.0,63.0,10.0,23.0,28.0,32.0,28.0,184.0
-Anti-Venom,False,Male,blue,Symbiote,Blond,-,229.0,358.0,75.0,60.0,65.0,90.0,85.0,84.0,459.0
-Apocalypse,True,Male,red,Mutant,Black,grey,213.0,135.0,100.0,100.0,33.0,100.0,100.0,60.0,493.0
-Arachne,False,Female,blue,Human,Blond,-,175.0,63.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Archangel,False,Male,blue,Mutant,Blond,blue,183.0,68.0,63.0,13.0,58.0,64.0,28.0,42.0,268.0
-Arclight,True,Female,violet,-,Purple,-,173.0,57.0,38.0,63.0,23.0,42.0,52.0,70.0,288.0
-Ardina,False,Female,white,Alien,Orange,gold,193.0,98.0,,,,,,,
-Ares,False,Male,brown,-,Brown,-,185.0,270.0,75.0,82.0,35.0,80.0,62.0,101.0,435.0
-Ariel,False,Female,purple,-,Pink,-,165.0,59.0,50.0,10.0,12.0,14.0,72.0,28.0,186.0
-Armor,False,Female,black,-,Black,-,163.0,50.0,50.0,63.0,12.0,80.0,55.0,54.0,314.0
-Atlas,False,Male,brown,Mutant,Red,-,183.0,101.0,50.0,80.0,23.0,99.0,69.0,42.0,363.0
-Aurora,False,Female,blue,Mutant,Black,-,180.0,63.0,50.0,15.0,83.0,56.0,69.0,56.0,329.0
-Azazel,True,Male,yellow,Neyaphem,Black,red,183.0,67.0,50.0,11.0,47.0,95.0,87.0,80.0,370.0
-Banshee,False,Male,green,Human,Strawberry Blond,-,183.0,77.0,50.0,10.0,58.0,42.0,60.0,70.0,290.0
-Bantam,False,Male,brown,-,Black,-,165.0,54.0,25.0,53.0,23.0,54.0,21.0,56.0,232.0
-Battlestar,False,Male,brown,-,Black,-,198.0,133.0,50.0,53.0,35.0,74.0,48.0,74.0,334.0
-Beak,False,Male,black,-,White,-,175.0,63.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Beast,False,Male,blue,Mutant,Blue,blue,180.0,181.0,88.0,48.0,35.0,56.0,35.0,84.0,346.0
-Beetle,True,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Beta Ray Bill,False,Male,-,-,No Hair,-,201.0,216.0,63.0,80.0,35.0,95.0,100.0,84.0,457.0
-Beyonder,False,Male,-,God / Eternal,-,-,-99.0,-99.0,88.0,100.0,23.0,100.0,100.0,56.0,467.0
-Big Man,True,Male,blue,-,Brown,-,165.0,71.0,75.0,12.0,23.0,28.0,19.0,70.0,227.0
-Binary,False,Female,blue,-,Blond,-,180.0,54.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Bird-Brain,False,-,-,-,-,-,-99.0,-99.0,25.0,10.0,35.0,28.0,21.0,42.0,161.0
-Bird-Man,True,Male,-,Human,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Bird-Man II,True,Male,-,Human,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Bishop,False,Male,brown,Mutant,No Hair,-,198.0,124.0,63.0,14.0,23.0,75.0,85.0,65.0,325.0
-Black Abbott,True,Male,red,-,Black,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Black Bolt,False,Male,blue,Inhuman,Black,-,188.0,95.0,75.0,67.0,100.0,84.0,100.0,56.0,482.0
-Black Cat,False,Female,green,Human,Blond,-,178.0,54.0,75.0,16.0,33.0,10.0,23.0,70.0,227.0
-Black Goliath,False,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Black Knight III,False,Male,brown,Human,Brown,-,183.0,86.0,63.0,10.0,8.0,70.0,43.0,70.0,264.0
-Black Mamba,True,Female,green,-,Black,-,170.0,52.0,75.0,10.0,35.0,42.0,78.0,65.0,305.0
-Black Panther,False,Male,brown,Human,Black,-,183.0,90.0,88.0,16.0,30.0,60.0,41.0,100.0,335.0
-Black Widow,False,Female,green,Human,Auburn,-,170.0,59.0,75.0,13.0,27.0,32.0,32.0,100.0,279.0
-Black Widow II,False,Female,blue,-,Blond,-,170.0,61.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Blackout,True,Male,red,Demon,White,white,191.0,104.0,63.0,32.0,45.0,80.0,38.0,65.0,323.0
-Blackwing,True,Male,blue,-,Black,-,185.0,86.0,38.0,10.0,35.0,32.0,20.0,56.0,191.0
-Blackwulf,False,Male,red,Alien,White,-,188.0,88.0,50.0,28.0,8.0,30.0,59.0,25.0,200.0
-Blade,False,Male,brown,Vampire,Black,-,188.0,97.0,63.0,28.0,38.0,50.0,33.0,90.0,302.0
-Blaquesmith,False,-,black,-,No Hair,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Bling!,False,Female,-,-,-,-,168.0,68.0,69.0,14.0,12.0,90.0,52.0,28.0,265.0
-Blink,False,Female,green,Mutant,Magenta,pink,165.0,56.0,50.0,8.0,20.0,28.0,55.0,64.0,225.0
-Blizzard,True,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Blizzard II,True,Male,brown,-,Brown,-,175.0,77.0,38.0,10.0,27.0,42.0,47.0,56.0,220.0
-Blob,True,Male,brown,-,Brown,-,178.0,230.0,10.0,83.0,23.0,95.0,26.0,72.0,309.0
-Bloodaxe,True,Female,blue,Human,Brown,-,218.0,495.0,63.0,80.0,33.0,80.0,84.0,84.0,424.0
-Bloodhawk,False,Male,black,Mutant,No Hair,-,-99.0,-99.0,50.0,10.0,50.0,80.0,66.0,64.0,320.0
-Bloodwraith,True,Male,white,-,No Hair,-,30.5,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Bolt,False,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Boom-Boom,False,Female,blue,Mutant,Blond,-,165.0,55.0,,,,,,,
-Boomer,False,Female,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Box,False,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Box III,False,-,blue,-,Blond,-,193.0,110.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Box IV,False,-,brown,-,Brown / Black,-,-99.0,-99.0,50.0,75.0,23.0,28.0,11.0,56.0,243.0
-Brother Voodoo,False,Male,brown,Human,Brown / White,-,183.0,99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Bullseye,True,Male,blue,Human,blond,-,183.0,90.0,50.0,11.0,25.0,70.0,20.0,70.0,246.0
-Bumbleboy,False,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Cable,False,Male,blue,Mutant,White,-,203.0,158.0,88.0,48.0,23.0,56.0,100.0,80.0,395.0
-Callisto,True,Female,blue,-,Black,-,175.0,74.0,63.0,53.0,23.0,42.0,45.0,85.0,311.0
-Cannonball,False,Male,blue,-,Blond,-,183.0,81.0,50.0,28.0,67.0,99.0,79.0,56.0,379.0
-Captain America,False,Male,blue,Human,blond,-,188.0,108.0,63.0,19.0,35.0,56.0,46.0,100.0,319.0
-Captain Britain,False,Male,blue,Human,Blond,-,198.0,116.0,75.0,77.0,50.0,60.0,31.0,80.0,373.0
-Captain Mar-vell,False,Male,blue,-,Blond,-,188.0,108.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Captain Marvel,False,Female,blue,Human-Kree,Blond,-,180.0,74.0,100.0,100.0,67.0,95.0,62.0,56.0,480.0
-Captain Planet,False,Male,red,God / Eternal,Green,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Captain Universe,False,-,-,God / Eternal,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Carnage,True,Male,green,Symbiote,Red,-,185.0,86.0,63.0,63.0,70.0,84.0,81.0,90.0,451.0
-Cat,False,Female,blue,-,Blond,-,173.0,61.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Cat II,False,Female,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Cecilia Reyes,False,-,brown,-,Brown,-,170.0,62.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Century,False,Male,white,Alien,White,grey,201.0,97.0,88.0,80.0,53.0,64.0,74.0,100.0,459.0
-Cerebra,False,Female,-,Mutant,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Chamber,False,Male,brown,Mutant,Brown,-,175.0,63.0,50.0,10.0,20.0,80.0,57.0,64.0,281.0
-Changeling,True,Male,brown,-,Black,-,180.0,81.0,63.0,10.0,23.0,42.0,64.0,64.0,266.0
-Clea,False,-,-,-,White,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Cloak,False,Male,brown,-,black,-,226.0,70.0,63.0,10.0,47.0,64.0,74.0,56.0,314.0
-Colossus,False,Male,silver,Mutant,Black,-,226.0,225.0,63.0,83.0,33.0,100.0,46.0,80.0,405.0
-Copycat,False,Female,red,Mutant,White,blue,183.0,67.0,,,,,,,
-Corsair,False,Male,brown,-,Brown,-,191.0,79.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Cottonmouth,True,Male,brown,Human,Black,-,183.0,99.0,,,,,,,
-Crimson Crusader,False,Male,blue,-,Strawberry Blond,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Crimson Dynamo,False,Male,brown,-,No Hair,-,180.0,104.0,,,,,,,
-Crystal,False,Female,green,Inhuman,Red,-,168.0,50.0,63.0,16.0,12.0,14.0,57.0,56.0,218.0
-Cyclops,False,Male,brown,Mutant,Brown,-,191.0,88.0,75.0,10.0,23.0,42.0,76.0,80.0,306.0
-Cypher,False,-,blue,-,Blond,-,175.0,68.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Dagger,False,Female,blue,-,Blond,-,165.0,52.0,63.0,10.0,35.0,42.0,52.0,70.0,272.0
-Daredevil,False,Male,blue,Human,Red,-,183.0,90.0,75.0,13.0,27.0,28.0,57.0,95.0,295.0
-Darkhawk,False,Male,brown,Human,Brown,-,185.0,81.0,50.0,32.0,33.0,70.0,74.0,64.0,323.0
-Darkstar,False,Female,brown,Mutant,Blond,-,168.0,56.0,38.0,8.0,35.0,42.0,52.0,64.0,239.0
-Dazzler,False,Female,blue,Mutant,Blond,-,173.0,52.0,63.0,10.0,35.0,42.0,64.0,56.0,270.0
-Deadpool,False,Male,brown,Mutant,No Hair,-,188.0,95.0,50.0,15.0,30.0,100.0,100.0,100.0,395.0
-Deathlok,False,Male,brown,Cyborg,Grey,-,193.0,178.0,69.0,32.0,30.0,70.0,40.0,60.0,301.0
-Demogoblin,True,Male,red,Demon,No Hair,-,185.0,95.0,50.0,48.0,42.0,35.0,54.0,60.0,289.0
-Destroyer,True,Male,-,-,-,-,188.0,383.0,50.0,95.0,58.0,98.0,90.0,70.0,461.0
-Diamondback,True,Male,brown,Human,Black,-,193.0,90.0,,,,,,,
-Doc Samson,False,Male,blue,Human / Radiation,Green,-,198.0,171.0,75.0,80.0,33.0,80.0,36.0,70.0,374.0
-Doctor Doom,True,Male,brown,Human,Brown,-,201.0,187.0,100.0,32.0,20.0,100.0,93.0,84.0,429.0
-Doctor Doom II,True,Male,brown,-,Brown,-,201.0,132.0,1.0,32.0,1.0,1.0,0.0,1.0,36.0
-Doctor Octopus,True,Male,brown,Human,Brown,-,175.0,110.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Doctor Strange,False,Male,grey,Human,Black,-,188.0,81.0,100.0,10.0,12.0,84.0,100.0,60.0,366.0
-Domino,False,Female,blue,Human,Black,white,173.0,54.0,63.0,10.0,27.0,28.0,49.0,74.0,251.0
-Doppelganger,True,Male,white,-,No Hair,-,196.0,104.0,8.0,63.0,60.0,95.0,62.0,84.0,372.0
-Dormammu,True,Male,yellow,-,No Hair,-,185.0,-99.0,88.0,95.0,83.0,100.0,100.0,80.0,546.0
-Drax the Destroyer,False,Male,red,Human / Altered,No Hair,green,193.0,306.0,,,,,,,
-Ego,True,-,-,-,-,-,-99.0,-99.0,88.0,80.0,83.0,99.0,71.0,28.0,449.0
-Electro,True,Male,blue,Human,Auburn,-,180.0,74.0,69.0,10.0,50.0,56.0,67.0,64.0,316.0
-Elektra,False,Female,blue,Human,Black,-,175.0,59.0,63.0,11.0,30.0,28.0,59.0,100.0,291.0
-Emma Frost,False,Female,blue,-,Blond,-,178.0,65.0,75.0,63.0,35.0,90.0,82.0,42.0,387.0
-Evil Deadpool,True,Male,white,Mutant,Red,-,188.0,95.0,,,,,,,
-Evilhawk,True,Male,red,Alien,Black,green,191.0,106.0,50.0,32.0,33.0,70.0,78.0,64.0,327.0
-Exodus,True,Male,blue,Mutant,Black,red,183.0,88.0,63.0,81.0,28.0,28.0,100.0,70.0,370.0
-Fabian Cortez,True,-,blue,-,Brown,-,196.0,96.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Falcon,False,Male,brown,Human,Black,-,188.0,108.0,38.0,13.0,50.0,28.0,22.0,64.0,215.0
-Fallen One II,True,Male,black,-,Blue,-,-99.0,-99.0,88.0,85.0,83.0,100.0,100.0,56.0,512.0
-Feral,False,-,yellow (without irises),-,Orange / White,-,175.0,50.0,38.0,28.0,45.0,28.0,20.0,70.0,229.0
-Fin Fang Foom,False,Male,red,Kakarantharaian,No Hair,green,975.0,18.0,50.0,81.0,23.0,100.0,68.0,70.0,392.0
-Firebird,False,Female,brown,-,Black,-,165.0,56.0,38.0,8.0,40.0,14.0,90.0,42.0,232.0
-Firelord,False,-,white,-,Yellow,-,193.0,99.0,38.0,63.0,75.0,90.0,48.0,28.0,342.0
-Firestar,False,Female,green,Mutant,Red,-,173.0,56.0,50.0,8.0,54.0,55.0,71.0,32.0,270.0
-Fixer,True,-,red,-,No Hair,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Forge,False,-,brown,-,Black,-,183.0,81.0,63.0,10.0,12.0,28.0,12.0,48.0,173.0
-Franklin Richards,False,Male,blue,Mutant,Blond,-,142.0,45.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Franklin Storm,False,-,blue,-,Grey,-,188.0,92.0,38.0,10.0,1.0,1.0,0.0,10.0,60.0
-Frenzy,True,Female,brown,-,Black,-,211.0,104.0,63.0,53.0,35.0,100.0,38.0,52.0,341.0
-Frigga,False,Female,blue,-,White,-,180.0,167.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Galactus,False,Male,black,Cosmic Entity,Black,-,876.0,16.0,100.0,100.0,83.0,100.0,100.0,70.0,553.0
-Gambit,False,Male,red,Mutant,Brown,-,185.0,81.0,63.0,10.0,23.0,28.0,55.0,84.0,263.0
-Gamora,False,Female,yellow,Zen-Whoberian,Black,green,183.0,77.0,,,,,,,
-Genesis,False,Male,blue,-,Blond,-,185.0,86.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Ghost Rider,False,Male,red,Demon,No Hair,-,188.0,99.0,50.0,55.0,25.0,100.0,70.0,60.0,360.0
-Ghost Rider II,False,-,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Giant-Man,False,Male,-,Human,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Giant-Man II,False,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Gladiator,False,Male,blue,Strontian,Blue,purple,198.0,268.0,,,,,,,
-Goblin Queen,True,Female,green,-,Red,-,168.0,50.0,75.0,10.0,23.0,28.0,65.0,56.0,257.0
-Goliath,False,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Goliath IV,False,Male,brown,-,Black,-,183.0,90.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Gravity,False,Male,blue,Human,Brown,-,178.0,79.0,50.0,32.0,33.0,40.0,72.0,30.0,257.0
-Green Goblin,True,Male,blue,Human,Auburn,-,180.0,83.0,75.0,48.0,35.0,48.0,38.0,28.0,272.0
-Green Goblin II,True,Male,blue,-,Auburn,-,178.0,77.0,75.0,55.0,37.0,50.0,38.0,26.0,281.0
-Green Goblin III,False,Male,-,-,-,-,183.0,88.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Green Goblin IV,False,Male,green,-,Brown,-,178.0,79.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Groot,False,Male,yellow,Flora Colossus,-,-,701.0,4.0,75.0,85.0,33.0,70.0,92.0,64.0,419.0
-Guardian,False,Male,brown,Human,Black,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Havok,False,Male,blue,Mutant,Blond,-,183.0,79.0,63.0,10.0,25.0,60.0,71.0,45.0,274.0
-Hawkeye,False,Male,blue,Human,Blond,-,191.0,104.0,50.0,12.0,23.0,14.0,26.0,80.0,205.0
-Hawkeye II,False,Female,blue,Human,Black,-,165.0,57.0,50.0,6.0,8.0,10.0,24.0,50.0,148.0
-Hela,True,Female,green,Asgardian,Black,-,213.0,225.0,,,,,,,
-Hellcat,False,Female,blue,Human,Red,-,173.0,61.0,50.0,10.0,23.0,42.0,18.0,70.0,213.0
-Hellstorm,False,Male,red,-,Red,-,185.0,81.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Hercules,False,Male,blue,Demi-God,Brown,-,196.0,146.0,63.0,100.0,46.0,85.0,67.0,100.0,461.0
-Hobgoblin,True,Male,blue,-,Grey,-,180.0,83.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Hollow,False,Female,blue,-,Red,-,170.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Hope Summers,False,Female,green,-,Red,-,168.0,48.0,63.0,10.0,12.0,32.0,89.0,75.0,281.0
-Howard the Duck,False,Male,brown,-,Yellow,-,79.0,18.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Hulk,False,Male,green,Human / Radiation,Green,green,244.0,630.0,88.0,100.0,47.0,100.0,41.0,85.0,461.0
-Human Torch,False,Male,blue,Human / Radiation,Blond,-,178.0,77.0,56.0,10.0,63.0,70.0,74.0,42.0,315.0
-Husk,False,Female,blue,Mutant,Blond,-,170.0,58.0,63.0,63.0,35.0,78.0,53.0,64.0,356.0
-Hybrid,False,Male,brown,Symbiote,Black,-,175.0,77.0,,,,,,,
-Hydro-Man,True,Male,brown,-,Brown,-,188.0,119.0,38.0,13.0,25.0,80.0,66.0,50.0,272.0
-Hyperion,False,Male,blue,Eternal,Red,-,183.0,207.0,63.0,95.0,75.0,95.0,58.0,72.0,458.0
-Iceman,False,Male,brown,Mutant,Brown,-,173.0,65.0,63.0,32.0,53.0,100.0,100.0,64.0,412.0
-Ink,False,Male,blue,Mutant,No Hair,-,180.0,81.0,38.0,28.0,17.0,40.0,66.0,50.0,239.0
-Invisible Woman,False,Female,blue,Human / Radiation,Blond,-,168.0,54.0,69.0,10.0,27.0,70.0,74.0,56.0,306.0
-Iron Fist,False,Male,blue,Human,Blond,-,180.0,79.0,75.0,23.0,35.0,42.0,43.0,100.0,318.0
-Iron Man,False,Male,blue,Human,Black,-,198.0,191.0,100.0,85.0,58.0,85.0,100.0,64.0,492.0
-Iron Monger,True,Male,blue,-,No Hair,-,-99.0,2.0,88.0,63.0,25.0,90.0,57.0,56.0,379.0
-Jack of Hearts,False,Male,blue / white,Human,Brown,-,155.0,79.0,63.0,55.0,100.0,30.0,70.0,30.0,348.0
-Jean Grey,False,Female,green,Mutant,Red,-,168.0,52.0,100.0,80.0,67.0,100.0,100.0,70.0,517.0
-Jennifer Kale,False,Female,blue,-,Blond,-,168.0,55.0,75.0,10.0,35.0,42.0,61.0,72.0,295.0
-Jessica Jones,False,Female,brown,Human,Brown,-,170.0,56.0,,,,,,,
-Jigsaw,True,Male,blue,-,Black,-,188.0,113.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-John Wraith,False,Male,brown,-,Black,-,183.0,88.0,75.0,12.0,35.0,28.0,65.0,80.0,295.0
-Jolt,False,Female,blue,-,Black,-,165.0,49.0,63.0,12.0,27.0,32.0,31.0,42.0,207.0
-Jubilee,False,Female,red,Mutant,Black,-,165.0,52.0,56.0,8.0,22.0,20.0,66.0,90.0,262.0
-Juggernaut,False,Male,blue,Human,Red,-,287.0,855.0,44.0,100.0,42.0,100.0,74.0,70.0,430.0
-Junkpile,True,Male,-,Mutant,-,-,-99.0,-99.0,50.0,38.0,17.0,90.0,71.0,30.0,296.0
-Justice,False,Male,hazel,Human,Brown,-,178.0,81.0,50.0,10.0,33.0,70.0,55.0,30.0,248.0
-Kang,True,Male,brown,-,Brown,-,191.0,104.0,100.0,48.0,58.0,70.0,71.0,70.0,417.0
-Kingpin,True,Male,blue,Human,No Hair,-,201.0,203.0,75.0,18.0,25.0,40.0,13.0,70.0,241.0
-Klaw,True,Male,red,Human,No Hair,red,188.0,97.0,63.0,38.0,33.0,100.0,62.0,60.0,356.0
-Kraven II,True,Male,brown,Human,Black,-,191.0,99.0,50.0,34.0,23.0,28.0,36.0,85.0,256.0
-Kraven the Hunter,True,Male,brown,Human,Black,-,183.0,106.0,63.0,32.0,35.0,42.0,26.0,85.0,283.0
-Lady Bullseye,True,Female,-,-,Black,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Lady Deathstrike,True,Female,brown,Cyborg,Black,-,175.0,58.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Leader,True,Male,green,-,No Hair,-,178.0,63.0,100.0,10.0,12.0,14.0,58.0,42.0,236.0
-Leech,False,Male,-,-,-,-,-99.0,-99.0,25.0,5.0,12.0,14.0,62.0,14.0,132.0
-Legion,False,Male,green / blue,Mutant,Black,-,175.0,59.0,,,,,,,
-Living Brain,True,-,yellow,-,-,-,198.0,360.0,75.0,53.0,35.0,56.0,31.0,28.0,278.0
-Living Tribunal,False,-,blue,Cosmic Entity,No Hair,gold,-99.0,-99.0,,,,,,,
-Lizard,True,Male,red,Human,No Hair,-,203.0,230.0,38.0,51.0,27.0,70.0,40.0,56.0,282.0
-Loki,True,Male,green,Asgardian,Black,-,193.0,236.0,88.0,57.0,47.0,85.0,85.0,56.0,418.0
-Longshot,False,Male,blue,Human,Blond,-,188.0,36.0,50.0,10.0,27.0,10.0,71.0,70.0,238.0
-Luke Cage,False,Male,brown,Human,Black,-,198.0,191.0,44.0,55.0,23.0,95.0,35.0,64.0,316.0
-Luna,False,Female,-,Human,-,-,-99.0,-99.0,38.0,6.0,83.0,14.0,53.0,14.0,208.0
-Lyja,False,Female,green,-,Green,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Mach-IV,True,Male,brown,-,Brown,-,180.0,79.0,75.0,36.0,60.0,84.0,60.0,56.0,371.0
-Machine Man,False,-,red,-,Black,-,183.0,383.0,63.0,32.0,35.0,84.0,51.0,64.0,329.0
-Magneto,True,Male,grey,Mutant,White,-,188.0,86.0,88.0,80.0,27.0,84.0,91.0,80.0,450.0
-Magus,True,Male,black,-,-,-,183.0,-99.0,88.0,100.0,70.0,99.0,100.0,74.0,531.0
-Man-Thing,False,Male,red,-,No Hair,green,213.0,225.0,50.0,32.0,8.0,100.0,98.0,40.0,328.0
-Man-Wolf,False,Male,brown,-,Auburn,-,188.0,90.0,63.0,44.0,35.0,42.0,38.0,70.0,292.0
-Mandarin,True,Male,blue,Human,White,-,188.0,97.0,100.0,28.0,23.0,28.0,99.0,95.0,373.0
-Mantis,False,Female,green,Human-Kree,Black,green,168.0,52.0,,,,,,,
-Marvel Girl,False,Female,green,-,Red,-,170.0,56.0,63.0,85.0,47.0,42.0,100.0,80.0,417.0
-Maverick,False,Male,blue,-,Black,-,193.0,110.0,63.0,10.0,12.0,42.0,60.0,85.0,272.0
-Medusa,False,Female,green,Inhuman,Red,-,180.0,59.0,75.0,34.0,35.0,70.0,35.0,56.0,305.0
-Meltdown,False,Female,blue,-,Blond,-,165.0,54.0,38.0,10.0,12.0,42.0,58.0,64.0,224.0
-Mephisto,True,Male,white,-,Black,-,198.0,140.0,88.0,85.0,35.0,95.0,100.0,42.0,445.0
-Meteorite,False,Female,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Mimic,False,Male,brown,-,Brown,-,188.0,101.0,63.0,67.0,47.0,56.0,79.0,42.0,354.0
-Mister Fantastic,False,Male,brown,Human / Radiation,Brown,-,185.0,81.0,100.0,10.0,18.0,70.0,32.0,64.0,294.0
-Mister Knife,True,Male,blue,Spartoi,Brown,-,-99.0,-99.0,,,,,,,
-Mister Sinister,True,Male,red,Human / Altered,Black,-,196.0,128.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Mockingbird,False,Female,blue,Human,Blond,-,175.0,61.0,,,,,,,
-MODOK,True,Male,white,Cyborg,Brownn,-,366.0,338.0,,,,,,,
-Molten Man,True,Male,gold,-,Gold,-,196.0,248.0,50.0,73.0,23.0,84.0,53.0,56.0,339.0
-Moon Knight,False,Male,brown,Human,Brown,-,188.0,101.0,50.0,36.0,23.0,42.0,28.0,75.0,254.0
-Moonstone,True,Female,blue,-,Blond,-,180.0,59.0,56.0,67.0,47.0,52.0,79.0,80.0,381.0
-Morlun,True,Male,white / red,-,Black,-,188.0,79.0,63.0,60.0,35.0,42.0,59.0,56.0,315.0
-Morph,False,Male,white,-,No Hair,-,178.0,79.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Moses Magnum,True,Male,brown,-,Black,-,175.0,72.0,75.0,28.0,12.0,42.0,55.0,56.0,268.0
-Mr Immortal,False,Male,blue,Mutant,Blond,-,188.0,70.0,,,,,,,
-Ms Marvel II,False,Female,blue,-,Red,-,173.0,61.0,38.0,63.0,23.0,84.0,11.0,56.0,275.0
-Multiple Man,False,Male,blue,-,Brown,-,180.0,70.0,63.0,11.0,23.0,70.0,28.0,62.0,257.0
-Mysterio,True,Male,brown,Human,No Hair,-,180.0,79.0,,,,,,,
-Mystique,True,Female,yellow (without irises),Mutant,Red / Orange,blue,178.0,54.0,75.0,12.0,23.0,64.0,58.0,74.0,306.0
-Namor,False,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Namora,False,Female,blue,-,Blond,-,180.0,85.0,50.0,85.0,42.0,42.0,41.0,64.0,324.0
-Namorita,False,Female,blue,-,Blond,-,168.0,101.0,50.0,72.0,47.0,70.0,30.0,70.0,339.0
-Nebula,True,Female,blue,Luphomoid,No Hair,blue,185.0,83.0,,,,,,,
-Negasonic Teenage Warhead,False,Female,black,Mutant,Black,-,-99.0,-99.0,,,,,,,
-Nick Fury,False,Male,brown,Human,Brown / White,-,185.0,99.0,75.0,11.0,23.0,42.0,25.0,100.0,276.0
-Nightcrawler,False,Male,yellow,-,Indigo,-,175.0,88.0,50.0,10.0,47.0,14.0,52.0,80.0,253.0
-Northstar,False,Male,blue,-,Black,-,180.0,83.0,50.0,18.0,83.0,56.0,70.0,70.0,347.0
-Nova,False,Male,brown,Human,Brown,-,185.0,86.0,100.0,85.0,67.0,101.0,100.0,85.0,538.0
-Odin,False,Male,blue,God / Eternal,White,-,206.0,293.0,,,,,,,
-Omega Red,True,Male,red,-,Blond,-,211.0,191.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-One-Above-All,False,-,-,Cosmic Entity,-,-,-99.0,-99.0,,,,,,,
-Onslaught,True,Male,red,Mutant,No Hair,-,305.0,405.0,88.0,85.0,47.0,100.0,100.0,85.0,505.0
-Penance,False,-,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Penance I,False,Female,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Penance II,False,Male,blue,-,Blond,-,183.0,89.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Phoenix,False,Female,green,Mutant,Red,-,168.0,52.0,100.0,80.0,67.0,100.0,100.0,70.0,517.0
-Plantman,True,Male,green,Mutant,Grey,-,183.0,87.0,,,,,,,
-Polaris,False,Female,green,Mutant,Green,-,170.0,52.0,,,,,,,
-Power Man,False,Male,-,Mutant,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Professor X,False,Male,blue,Mutant,No Hair,-,183.0,86.0,100.0,8.0,12.0,14.0,90.0,32.0,256.0
-Proto-Goblin,True,Male,green,-,Blond,-,-99.0,-99.0,63.0,38.0,23.0,48.0,22.0,28.0,222.0
-Psylocke,False,Female,blue,Mutant,Purple,-,180.0,70.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Punisher,False,Male,blue,Human,Black,-,183.0,90.0,50.0,16.0,23.0,28.0,22.0,100.0,239.0
-Purple Man,True,Male,purple,Human,Purple,purple,180.0,74.0,,,,,,,
-Pyro,True,Male,blue,-,Blond,-,178.0,68.0,38.0,10.0,12.0,14.0,50.0,28.0,152.0
-Quicksilver,False,Male,blue,Mutant,Silver,-,183.0,79.0,63.0,28.0,100.0,60.0,57.0,56.0,364.0
-Quill,False,Male,brown,-,Brown,-,163.0,56.0,38.0,10.0,12.0,14.0,23.0,14.0,111.0
-Razor-Fist II,True,Male,blue,-,No Hair,-,191.0,117.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Red Hulk,False,Male,yellow,Human / Radiation,Black,red,213.0,630.0,50.0,88.0,47.0,95.0,59.0,75.0,414.0
-Red Skull,True,Male,blue,-,No Hair,-,188.0,108.0,75.0,10.0,12.0,14.0,19.0,80.0,210.0
-Rhino,True,Male,brown,Human / Radiation,Brown,-,196.0,320.0,25.0,80.0,43.0,90.0,37.0,85.0,360.0
-Ripcord,False,Female,green,-,Black,-,180.0,72.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Rocket Raccoon,False,Male,brown,Animal,Brown,-,122.0,25.0,50.0,5.0,23.0,28.0,28.0,64.0,198.0
-Rogue,False,Female,green,-,Brown / White,-,173.0,54.0,75.0,10.0,12.0,28.0,80.0,80.0,285.0
-Ronin,False,Male,blue,Human,Blond,-,191.0,104.0,38.0,10.0,27.0,32.0,21.0,90.0,218.0
-Sabretooth,True,Male,amber,Mutant,Blond,-,198.0,171.0,55.0,53.0,25.0,90.0,28.0,100.0,351.0
-Sage,False,Female,blue,-,Black,-,170.0,61.0,75.0,10.0,12.0,14.0,28.0,56.0,195.0
-Sandman,False,Male,brown,Human,Brown,-,185.0,203.0,50.0,75.0,47.0,97.0,62.0,56.0,387.0
-Sasquatch,False,Male,red,-,Orange,-,305.0,900.0,75.0,80.0,23.0,56.0,15.0,42.0,291.0
-Scarlet Spider,False,Male,blue,Human,Blond,-,178.0,74.0,75.0,53.0,60.0,74.0,39.0,56.0,357.0
-Scarlet Spider II,False,Male,brown,Clone,Brown,-,193.0,113.0,88.0,55.0,60.0,40.0,30.0,56.0,329.0
-Scarlet Witch,True,Female,blue,Mutant,Brown,-,170.0,59.0,88.0,10.0,23.0,42.0,67.0,28.0,258.0
-Scorpia,True,Female,green,-,Red,-,-99.0,-99.0,38.0,28.0,42.0,28.0,34.0,28.0,198.0
-Scorpion,True,Male,brown,Human,Brown,-,211.0,310.0,50.0,52.0,60.0,85.0,49.0,80.0,376.0
-Sebastian Shaw,True,Male,-,Mutant,-,-,-99.0,-99.0,,,,,,,
-Sentry,False,Male,blue,Mutant,Blond,-,188.0,87.0,75.0,80.0,58.0,84.0,97.0,54.0,448.0
-Shadow King,False,-,red,-,-,-,185.0,149.0,75.0,12.0,27.0,100.0,100.0,75.0,389.0
-Shadowcat,False,Female,hazel,Mutant,Brown,-,168.0,50.0,88.0,8.0,21.0,25.0,69.0,70.0,281.0
-Shang-Chi,False,Male,brown,Human,Black,-,178.0,79.0,63.0,12.0,30.0,50.0,25.0,100.0,280.0
-Shatterstar,False,Male,brown,-,Red,-,191.0,88.0,63.0,48.0,45.0,64.0,42.0,84.0,346.0
-She-Hulk,False,Female,green,Human,Green,-,201.0,315.0,69.0,100.0,42.0,100.0,33.0,70.0,414.0
-She-Thing,False,Female,blue,Human / Radiation,No Hair,-,183.0,153.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Shocker,True,Male,brown,Human,Brown,-,175.0,79.0,63.0,10.0,23.0,70.0,63.0,56.0,285.0
-Shriek,False,Female,yellow / blue,-,Black,-,173.0,52.0,50.0,10.0,23.0,28.0,45.0,42.0,198.0
-Sif,False,Female,blue,Asgardian,Black,-,188.0,191.0,50.0,57.0,25.0,52.0,19.0,70.0,273.0
-Silk,False,Female,brown,Human,Black,-,-99.0,-99.0,,,,,,,
-Silver Surfer,False,Male,white,Alien,No Hair,silver,193.0,101.0,63.0,100.0,84.0,101.0,100.0,32.0,480.0
-Silverclaw,False,Female,brown,-,Black,-,157.0,50.0,50.0,28.0,35.0,42.0,34.0,42.0,231.0
-Siryn,True,Female,blue,-,Strawberry Blond,-,168.0,52.0,38.0,8.0,47.0,28.0,50.0,42.0,213.0
-Skaar,False,Male,green,-,Black,-,198.0,180.0,50.0,85.0,27.0,90.0,62.0,85.0,399.0
-Snake-Eyes,True,Male,-,Animal,-,-,-99.0,-99.0,,,,,,,
-Snowbird,False,Female,white,-,Blond,-,178.0,49.0,50.0,32.0,27.0,42.0,63.0,52.0,266.0
-Songbird,False,Female,green,-,Red / White,-,165.0,65.0,75.0,36.0,27.0,42.0,55.0,56.0,291.0
-Speedball,False,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Spider-Carnage,True,Male,-,Symbiote,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Spider-Girl,False,Female,blue,Human,Brown,-,170.0,54.0,63.0,38.0,60.0,65.0,46.0,75.0,347.0
-Spider-Gwen,False,Female,blue,Human,Blond,-,165.0,56.0,,,,,,,
-Spider-Man,False,Male,hazel,Human,Brown,-,178.0,74.0,88.0,55.0,60.0,74.0,58.0,85.0,420.0
-Spider-Woman,False,Female,green,Human,Black,-,178.0,59.0,50.0,42.0,42.0,32.0,62.0,52.0,280.0
-Spider-Woman II,False,Female,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Spider-Woman III,False,Female,brown,-,Brown,-,173.0,55.0,50.0,48.0,27.0,42.0,60.0,28.0,255.0
-Spider-Woman IV,True,Female,red,-,White,-,178.0,58.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Spyke,False,Male,brown,Mutant,Blond,-,183.0,83.0,50.0,12.0,17.0,60.0,41.0,30.0,210.0
-Stacy X,False,Female,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Star-Lord,False,Male,blue,Human-Spartoi,Blond,-,188.0,79.0,,,,,,,
-Stardust,False,Male,-,-,-,-,-99.0,-99.0,88.0,85.0,100.0,110.0,100.0,85.0,568.0
-Storm,False,Female,blue,Mutant,White,-,180.0,57.0,75.0,10.0,47.0,30.0,88.0,75.0,325.0
-Sunspot,False,Male,brown,Mutant,black,-,173.0,77.0,63.0,63.0,35.0,25.0,79.0,70.0,335.0
-Swarm,True,Male,yellow,Mutant,No Hair,yellow,196.0,47.0,,,,,,,
-Synch,False,Male,brown,-,Black,-,180.0,74.0,75.0,67.0,23.0,28.0,74.0,56.0,323.0
-Taskmaster,True,Male,brown,Human,Brown,-,188.0,99.0,,,,,,,
-Tempest,False,Female,brown,-,Black,-,163.0,54.0,38.0,10.0,45.0,28.0,62.0,60.0,243.0
-Thanos,True,Male,red,Eternal,No Hair,purple,201.0,443.0,88.0,100.0,17.0,100.0,100.0,80.0,485.0
-Thing,False,Male,blue,Human / Radiation,No Hair,-,183.0,225.0,75.0,84.0,21.0,90.0,26.0,80.0,376.0
-Thor,False,Male,blue,Asgardian,Blond,-,198.0,288.0,69.0,100.0,92.0,100.0,100.0,85.0,546.0
-Thor Girl,False,Female,blue,Asgardian,Blond,-,175.0,143.0,75.0,83.0,70.0,84.0,100.0,70.0,482.0
-Thunderbird,False,Male,brown,-,Black,-,185.0,101.0,50.0,32.0,27.0,32.0,14.0,70.0,225.0
-Thunderbird II,False,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Thunderbird III,False,Male,brown,-,Black,-,175.0,74.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Thunderstrike,False,Male,blue,-,Blond,-,198.0,288.0,63.0,80.0,70.0,84.0,31.0,72.0,400.0
-Thundra,False,Female,green,-,Red,-,218.0,158.0,38.0,81.0,32.0,64.0,26.0,54.0,295.0
-Tiger Shark,True,Male,grey,Human,No Hair,grey,185.0,203.0,38.0,72.0,42.0,70.0,21.0,28.0,271.0
-Tigra,False,Female,green,-,Auburn,-,178.0,81.0,63.0,32.0,53.0,38.0,33.0,90.0,309.0
-Tinkerer,True,Male,brown,-,White,-,163.0,54.0,100.0,10.0,23.0,14.0,10.0,14.0,171.0
-Toad,False,Male,black,Mutant,Brown,green,175.0,76.0,50.0,34.0,58.0,56.0,49.0,28.0,275.0
-Toxin,False,Male,blue,Symbiote,Brown,-,188.0,97.0,56.0,73.0,70.0,84.0,75.0,70.0,428.0
-Triton,False,Male,green,Inhuman,No Hair,green,188.0,86.0,,,,,,,
-Ultragirl,False,Female,blue,-,Blond,-,168.0,105.0,50.0,80.0,35.0,70.0,35.0,80.0,350.0
-Ultron,True,Male,red,Android,-,silver,206.0,331.0,88.0,83.0,42.0,100.0,100.0,64.0,477.0
-Utgard-Loki,True,Male,blue,Frost Giant,White,-,15.2,58.0,50.0,80.0,23.0,84.0,72.0,64.0,373.0
-Vagabond,False,Female,blue,-,Strawberry Blond,-,168.0,54.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Valkyrie,False,Female,blue,-,Blond,-,191.0,214.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Vanisher,True,Male,green,-,No Hair,-,165.0,79.0,63.0,10.0,75.0,56.0,39.0,42.0,285.0
-Venom,True,Male,blue,Symbiote,Strawberry Blond,-,191.0,117.0,75.0,57.0,65.0,84.0,79.0,84.0,444.0
-Venom II,True,Male,brown,-,Black,-,175.0,50.0,50.0,57.0,47.0,70.0,54.0,56.0,334.0
-Venom III,True,Male,brown,Symbiote,Brown,-,229.0,334.0,63.0,73.0,35.0,90.0,66.0,56.0,383.0
-Venompool,False,Male,-,Symbiote,-,-,226.0,-99.0,,,,,,,
-Vertigo II,False,Female,blue,-,Silver,-,168.0,52.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Vindicator,False,Female,green,Human,Red,-,165.0,54.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Vision,False,Male,gold,Android,No Hair,red,191.0,135.0,100.0,72.0,54.0,95.0,76.0,70.0,467.0
-Vision II,False,-,red,-,No Hair,-,191.0,135.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Vulcan,False,Male,black,-,Black,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Vulture,True,Male,brown,Human,No Hair,-,180.0,79.0,63.0,22.0,47.0,56.0,40.0,56.0,284.0
-Walrus,True,Male,blue,Human,Black,-,183.0,162.0,50.0,28.0,8.0,50.0,11.0,20.0,167.0
-War Machine,False,Male,brown,Human,Brown,-,185.0,95.0,63.0,80.0,63.0,100.0,100.0,85.0,491.0
-Warbird,False,Female,blue,-,Blond,-,180.0,54.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Warlock,False,Male,red,-,Blond,-,188.0,108.0,88.0,36.0,79.0,95.0,71.0,95.0,464.0
-Warpath,False,Male,brown,Mutant,Black,-,218.0,158.0,38.0,72.0,47.0,70.0,26.0,84.0,337.0
-Wasp,False,Female,blue,Human,Auburn,-,163.0,50.0,63.0,8.0,58.0,52.0,23.0,42.0,246.0
-Watcher,False,Male,-,-,-,-,-99.0,-99.0,100.0,80.0,67.0,89.0,100.0,56.0,492.0
-Weapon XI,True,Male,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-White Queen,False,Female,blue,-,Blond,-,178.0,65.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Winter Soldier,False,Male,brown,Human,Brown,-,175.0,117.0,56.0,32.0,35.0,65.0,60.0,84.0,332.0
-Wiz Kid,False,-,brown,-,Black,-,140.0,39.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Wolfsbane,False,Female,green,-,Auburn,-,366.0,473.0,38.0,16.0,35.0,42.0,26.0,42.0,199.0
-Wolverine,False,Male,blue,Mutant,Black,-,160.0,135.0,55.0,32.0,38.0,100.0,44.0,100.0,369.0
-Wonder Man,False,Male,red,-,Black,-,188.0,171.0,75.0,100.0,53.0,90.0,64.0,64.0,446.0
-Wondra,False,Female,-,-,-,-,-99.0,-99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Wyatt Wingfoot,False,Male,brown,-,Black,-,196.0,117.0,10.0,10.0,12.0,1.0,1.0,56.0,90.0
-X-23,False,Female,green,Mutant / Clone,Black,-,155.0,50.0,75.0,24.0,35.0,90.0,27.0,85.0,336.0
-X-Man,False,Male,blue,-,Brown,-,175.0,61.0,88.0,53.0,53.0,95.0,92.0,84.0,465.0
-Yellow Claw,True,Male,blue,-,No Hair,-,188.0,95.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
-Yellowjacket,False,Male,blue,Human,Blond,-,183.0,83.0,88.0,10.0,12.0,28.0,12.0,14.0,164.0
-Yellowjacket II,False,Female,blue,Human,Strawberry Blond,-,165.0,52.0,50.0,10.0,35.0,28.0,31.0,28.0,182.0
-Ymir,False,Male,white,Frost Giant,No Hair,white,304.8,-99.0,50.0,100.0,27.0,100.0,83.0,28.0,388.0
+a-bomb,False,male,yellow,human,no hair,,203.0,441.0,38.0,100.0,17.0,80.0,17.0,64.0,316.0
+abomination,True,male,green,human / radiation,no hair,,203.0,441.0,63.0,80.0,53.0,90.0,55.0,95.0,436.0
+abraxas,True,male,blue,cosmic entity,black,,,,88.0,100.0,83.0,99.0,100.0,56.0,526.0
+absorbing man,True,male,blue,human,no hair,,193.0,122.0,,,,,,,
+agent 13,False,female,blue,,blond,,173.0,61.0,,,,,,,
+agent bob,False,male,brown,human,brown,,178.0,81.0,10.0,8.0,13.0,5.0,5.0,20.0,61.0
+agent zero,False,male,,,,,191.0,104.0,75.0,28.0,38.0,80.0,72.0,95.0,388.0
+air-walker,True,male,blue,,white,,188.0,108.0,50.0,85.0,100.0,85.0,100.0,40.0,460.0
+ajax,True,male,brown,cyborg,black,,193.0,90.0,,,,,,,
+ammo,True,male,brown,human,black,,188.0,101.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+angel,False,male,blue,,blond,,183.0,68.0,63.0,13.0,46.0,64.0,17.0,42.0,245.0
+angel dust,False,female,yellow,mutant,black,,165.0,57.0,,,,,,,
+angel salvadore,False,female,brown,,black,,163.0,54.0,38.0,10.0,28.0,28.0,46.0,60.0,210.0
+annihilus,True,male,green,,no hair,,180.0,90.0,75.0,80.0,47.0,56.0,59.0,64.0,381.0
+ant-man,False,male,blue,human,blond,,211.0,122.0,100.0,10.0,23.0,28.0,32.0,32.0,225.0
+ant-man ii,False,male,blue,human,blond,,183.0,86.0,63.0,10.0,23.0,28.0,32.0,28.0,184.0
+anti-venom,True,male,blue,symbiote,blond,,229.0,358.0,75.0,60.0,65.0,90.0,85.0,84.0,459.0
+apocalypse,True,male,red,mutant,black,grey,213.0,135.0,100.0,100.0,33.0,100.0,100.0,60.0,493.0
+arachne,False,female,blue,human,blond,,175.0,63.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+archangel,False,male,blue,mutant,blond,blue,183.0,68.0,63.0,13.0,58.0,64.0,28.0,42.0,268.0
+arclight,True,female,violet,,purple,,173.0,57.0,38.0,63.0,23.0,42.0,52.0,70.0,288.0
+ardina,False,female,white,alien,orange,gold,193.0,98.0,,,,,,,
+ares,False,male,brown,,brown,,185.0,270.0,75.0,82.0,35.0,80.0,62.0,101.0,435.0
+ariel,False,female,purple,,pink,,165.0,59.0,50.0,10.0,12.0,14.0,72.0,28.0,186.0
+armor,False,female,black,,black,,163.0,50.0,50.0,63.0,12.0,80.0,55.0,54.0,314.0
+atlas,False,male,brown,mutant,red,,183.0,101.0,50.0,80.0,23.0,99.0,69.0,42.0,363.0
+aurora,False,female,blue,mutant,black,,180.0,63.0,50.0,15.0,83.0,56.0,69.0,56.0,329.0
+azazel,True,male,yellow,neyaphem,black,red,183.0,67.0,50.0,11.0,47.0,95.0,87.0,80.0,370.0
+banshee,False,male,green,human,strawberry blond,,183.0,77.0,50.0,10.0,58.0,42.0,60.0,70.0,290.0
+bantam,False,male,brown,,black,,165.0,54.0,25.0,53.0,23.0,54.0,21.0,56.0,232.0
+battlestar,False,male,brown,,black,,198.0,133.0,50.0,53.0,35.0,74.0,48.0,74.0,334.0
+beak,False,male,black,,white,,175.0,63.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+beast,False,male,blue,mutant,blue,blue,180.0,181.0,88.0,48.0,35.0,56.0,35.0,84.0,346.0
+beetle,True,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+beta ray bill,False,male,,,no hair,,201.0,216.0,63.0,80.0,35.0,95.0,100.0,84.0,457.0
+beyonder,False,male,,god / eternal,,,,,88.0,100.0,23.0,100.0,100.0,56.0,467.0
+big man,True,male,blue,,brown,,165.0,71.0,75.0,12.0,23.0,28.0,19.0,70.0,227.0
+binary,False,female,blue,,blond,,180.0,54.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+bird-brain,False,,,,,,,,25.0,10.0,35.0,28.0,21.0,42.0,161.0
+bird-man,True,male,,human,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+bird-man ii,True,male,,human,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+bishop,False,male,brown,mutant,no hair,,198.0,124.0,63.0,14.0,23.0,75.0,85.0,65.0,325.0
+black abbott,True,male,red,,black,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+black bolt,False,male,blue,inhuman,black,,188.0,95.0,75.0,67.0,100.0,84.0,100.0,56.0,482.0
+black cat,False,female,green,human,blond,,178.0,54.0,75.0,16.0,33.0,10.0,23.0,70.0,227.0
+black goliath,False,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+black knight iii,False,male,brown,human,brown,,183.0,86.0,63.0,10.0,8.0,70.0,43.0,70.0,264.0
+black mamba,True,female,green,,black,,170.0,52.0,75.0,10.0,35.0,42.0,78.0,65.0,305.0
+black panther,False,male,brown,human,black,,183.0,90.0,88.0,16.0,30.0,60.0,41.0,100.0,335.0
+black widow,False,female,green,human,auburn,,170.0,59.0,75.0,13.0,27.0,32.0,32.0,100.0,279.0
+black widow ii,False,female,blue,,blond,,170.0,61.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+blackout,True,male,red,demon,white,white,191.0,104.0,63.0,32.0,45.0,80.0,38.0,65.0,323.0
+blackwing,True,male,blue,,black,,185.0,86.0,38.0,10.0,35.0,32.0,20.0,56.0,191.0
+blackwulf,True,male,red,alien,white,,188.0,88.0,50.0,28.0,8.0,30.0,59.0,25.0,200.0
+blade,False,male,brown,vampire,black,,188.0,97.0,63.0,28.0,38.0,50.0,33.0,90.0,302.0
+blaquesmith,False,,black,,no hair,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+bling!,False,female,,,,,168.0,68.0,69.0,14.0,12.0,90.0,52.0,28.0,265.0
+blink,False,female,green,mutant,magenta,pink,165.0,56.0,50.0,8.0,20.0,28.0,55.0,64.0,225.0
+blizzard,True,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+blizzard ii,True,male,brown,,brown,,175.0,77.0,38.0,10.0,27.0,42.0,47.0,56.0,220.0
+blob,True,male,brown,,brown,,178.0,230.0,10.0,83.0,23.0,95.0,26.0,72.0,309.0
+bloodaxe,True,female,blue,human,brown,,218.0,495.0,63.0,80.0,33.0,80.0,84.0,84.0,424.0
+bloodhawk,False,male,black,mutant,no hair,,,,50.0,10.0,50.0,80.0,66.0,64.0,320.0
+bloodwraith,True,male,white,,no hair,,30.5,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+bolt,False,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+boom-boom,False,female,blue,mutant,blond,,165.0,55.0,,,,,,,
+boomer,False,female,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+box,False,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+box iii,False,,blue,,blond,,193.0,110.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+box iv,False,,brown,,brown / black,,,,50.0,75.0,23.0,28.0,11.0,56.0,243.0
+brother voodoo,False,male,brown,human,brown / white,,183.0,99.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+bullseye,True,male,blue,human,blond,,183.0,90.0,50.0,11.0,25.0,70.0,20.0,70.0,246.0
+bumbleboy,False,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+cable,False,male,blue,mutant,white,,203.0,158.0,88.0,48.0,23.0,56.0,100.0,80.0,395.0
+callisto,True,female,blue,,black,,175.0,74.0,63.0,53.0,23.0,42.0,45.0,85.0,311.0
+cannonball,False,male,blue,,blond,,183.0,81.0,50.0,28.0,67.0,99.0,79.0,56.0,379.0
+captain america,False,male,blue,human,blond,,188.0,108.0,63.0,19.0,35.0,56.0,46.0,100.0,319.0
+captain britain,False,male,blue,human,blond,,198.0,116.0,75.0,77.0,50.0,60.0,31.0,80.0,373.0
+captain mar-vell,False,male,blue,,blond,,188.0,108.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+captain marvel,False,female,blue,human-kree,blond,,180.0,74.0,100.0,100.0,67.0,95.0,62.0,56.0,480.0
+captain planet,False,male,red,god / eternal,green,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+captain universe,False,,,god / eternal,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+carnage,True,male,green,symbiote,red,,185.0,86.0,63.0,63.0,70.0,84.0,81.0,90.0,451.0
+cat,False,female,blue,,blond,,173.0,61.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+cat ii,False,female,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+cecilia reyes,False,,brown,,brown,,170.0,62.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+century,False,male,white,alien,white,grey,201.0,97.0,88.0,80.0,53.0,64.0,74.0,100.0,459.0
+cerebra,False,female,,mutant,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+chamber,False,male,brown,mutant,brown,,175.0,63.0,50.0,10.0,20.0,80.0,57.0,64.0,281.0
+changeling,True,male,brown,,black,,180.0,81.0,63.0,10.0,23.0,42.0,64.0,64.0,266.0
+clea,False,,,,white,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+cloak,False,male,brown,,black,,226.0,70.0,63.0,10.0,47.0,64.0,74.0,56.0,314.0
+colossus,False,male,silver,mutant,black,,226.0,225.0,63.0,83.0,33.0,100.0,46.0,80.0,405.0
+copycat,False,female,red,mutant,white,blue,183.0,67.0,,,,,,,
+corsair,False,male,brown,,brown,,191.0,79.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+cottonmouth,True,male,brown,human,black,,183.0,99.0,,,,,,,
+crimson crusader,False,male,blue,,strawberry blond,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+crimson dynamo,False,male,brown,,no hair,,180.0,104.0,,,,,,,
+crystal,False,female,green,inhuman,red,,168.0,50.0,63.0,16.0,12.0,14.0,57.0,56.0,218.0
+cyclops,False,male,brown,mutant,brown,,191.0,88.0,75.0,10.0,23.0,42.0,76.0,80.0,306.0
+cypher,False,,blue,,blond,,175.0,68.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+dagger,False,female,blue,,blond,,165.0,52.0,63.0,10.0,35.0,42.0,52.0,70.0,272.0
+daredevil,False,male,blue,human,red,,183.0,90.0,75.0,13.0,27.0,28.0,57.0,95.0,295.0
+darkhawk,False,male,brown,human,brown,,185.0,81.0,50.0,32.0,33.0,70.0,74.0,64.0,323.0
+darkstar,False,female,brown,mutant,blond,,168.0,56.0,38.0,8.0,35.0,42.0,52.0,64.0,239.0
+dazzler,False,female,blue,mutant,blond,,173.0,52.0,63.0,10.0,35.0,42.0,64.0,56.0,270.0
+deadpool,False,male,brown,mutant,no hair,,188.0,95.0,50.0,15.0,30.0,100.0,100.0,100.0,395.0
+deathlok,False,male,brown,cyborg,grey,,193.0,178.0,69.0,32.0,30.0,70.0,40.0,60.0,301.0
+demogoblin,True,male,red,demon,no hair,,185.0,95.0,50.0,48.0,42.0,35.0,54.0,60.0,289.0
+destroyer,True,male,,,,,188.0,383.0,50.0,95.0,58.0,98.0,90.0,70.0,461.0
+diamondback,True,male,brown,human,black,,193.0,90.0,,,,,,,
+doc samson,False,male,blue,human / radiation,green,,198.0,171.0,75.0,80.0,33.0,80.0,36.0,70.0,374.0
+doctor doom,True,male,brown,human,brown,,201.0,187.0,100.0,32.0,20.0,100.0,93.0,84.0,429.0
+doctor doom ii,True,male,brown,,brown,,201.0,132.0,1.0,32.0,1.0,1.0,0.0,1.0,36.0
+doctor octopus,True,male,brown,human,brown,,175.0,110.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+doctor strange,False,male,grey,human,black,,188.0,81.0,100.0,10.0,12.0,84.0,100.0,60.0,366.0
+domino,False,female,blue,human,black,white,173.0,54.0,63.0,10.0,27.0,28.0,49.0,74.0,251.0
+doppelganger,True,male,white,,no hair,,196.0,104.0,8.0,63.0,60.0,95.0,62.0,84.0,372.0
+dormammu,True,male,yellow,,no hair,,185.0,,88.0,95.0,83.0,100.0,100.0,80.0,546.0
+drax the destroyer,False,male,red,human / altered,no hair,green,193.0,306.0,,,,,,,
+ego,True,,,,,,,,88.0,80.0,83.0,99.0,71.0,28.0,449.0
+electro,True,male,blue,human,auburn,,180.0,74.0,69.0,10.0,50.0,56.0,67.0,64.0,316.0
+elektra,False,female,blue,human,black,,175.0,59.0,63.0,11.0,30.0,28.0,59.0,100.0,291.0
+emma frost,False,female,blue,,blond,,178.0,65.0,75.0,63.0,35.0,90.0,82.0,42.0,387.0
+evil deadpool,True,male,white,mutant,red,,188.0,95.0,,,,,,,
+evilhawk,True,male,red,alien,black,green,191.0,106.0,50.0,32.0,33.0,70.0,78.0,64.0,327.0
+exodus,True,male,blue,mutant,black,red,183.0,88.0,63.0,81.0,28.0,28.0,100.0,70.0,370.0
+fabian cortez,True,,blue,,brown,,196.0,96.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+falcon,False,male,brown,human,black,,188.0,108.0,38.0,13.0,50.0,28.0,22.0,64.0,215.0
+fallen one ii,True,male,black,,blue,,,,88.0,85.0,83.0,100.0,100.0,56.0,512.0
+feral,False,,yellow (without irises),,orange / white,,175.0,50.0,38.0,28.0,45.0,28.0,20.0,70.0,229.0
+fin fang foom,False,male,red,kakarantharaian,no hair,green,975.0,18.0,50.0,81.0,23.0,100.0,68.0,70.0,392.0
+firebird,False,female,brown,,black,,165.0,56.0,38.0,8.0,40.0,14.0,90.0,42.0,232.0
+firelord,False,,white,,yellow,,193.0,99.0,38.0,63.0,75.0,90.0,48.0,28.0,342.0
+firestar,False,female,green,mutant,red,,173.0,56.0,50.0,8.0,54.0,55.0,71.0,32.0,270.0
+fixer,True,,red,,no hair,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+forge,False,,brown,,black,,183.0,81.0,63.0,10.0,12.0,28.0,12.0,48.0,173.0
+franklin richards,False,male,blue,mutant,blond,,142.0,45.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+franklin storm,False,,blue,,grey,,188.0,92.0,38.0,10.0,1.0,1.0,0.0,10.0,60.0
+frenzy,True,female,brown,,black,,211.0,104.0,63.0,53.0,35.0,100.0,38.0,52.0,341.0
+frigga,False,female,blue,,white,,180.0,167.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+galactus,False,male,black,cosmic entity,black,,876.0,16.0,100.0,100.0,83.0,100.0,100.0,70.0,553.0
+gambit,False,male,red,mutant,brown,,185.0,81.0,63.0,10.0,23.0,28.0,55.0,84.0,263.0
+gamora,False,female,yellow,zen-whoberian,black,green,183.0,77.0,,,,,,,
+genesis,False,male,blue,,blond,,185.0,86.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+ghost rider,False,male,red,demon,no hair,,188.0,99.0,50.0,55.0,25.0,100.0,70.0,60.0,360.0
+ghost rider ii,False,,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+giant-man,False,male,,human,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+giant-man ii,False,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+gladiator,False,male,blue,strontian,blue,purple,198.0,268.0,,,,,,,
+goblin queen,True,female,green,,red,,168.0,50.0,75.0,10.0,23.0,28.0,65.0,56.0,257.0
+goliath,False,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+goliath iv,False,male,brown,,black,,183.0,90.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+gravity,False,male,blue,human,brown,,178.0,79.0,50.0,32.0,33.0,40.0,72.0,30.0,257.0
+green goblin,True,male,blue,human,auburn,,180.0,83.0,75.0,48.0,35.0,48.0,38.0,28.0,272.0
+green goblin ii,True,male,blue,,auburn,,178.0,77.0,75.0,55.0,37.0,50.0,38.0,26.0,281.0
+green goblin iii,False,male,,,,,183.0,88.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+green goblin iv,False,male,green,,brown,,178.0,79.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+groot,False,male,yellow,flora colossus,,,701.0,4.0,75.0,85.0,33.0,70.0,92.0,64.0,419.0
+guardian,False,male,brown,human,black,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+havok,False,male,blue,mutant,blond,,183.0,79.0,63.0,10.0,25.0,60.0,71.0,45.0,274.0
+hawkeye,False,male,blue,human,blond,,191.0,104.0,50.0,12.0,23.0,14.0,26.0,80.0,205.0
+hawkeye ii,False,female,blue,human,black,,165.0,57.0,50.0,6.0,8.0,10.0,24.0,50.0,148.0
+hela,True,female,green,asgardian,black,,213.0,225.0,,,,,,,
+hellcat,False,female,blue,human,red,,173.0,61.0,50.0,10.0,23.0,42.0,18.0,70.0,213.0
+hellstorm,False,male,red,,red,,185.0,81.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+hercules,False,male,blue,demi-god,brown,,196.0,146.0,63.0,100.0,46.0,85.0,67.0,100.0,461.0
+hobgoblin,True,male,blue,,grey,,180.0,83.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+hollow,False,female,blue,,red,,170.0,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+hope summers,False,female,green,,red,,168.0,48.0,63.0,10.0,12.0,32.0,89.0,75.0,281.0
+howard the duck,False,male,brown,,yellow,,79.0,18.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+hulk,False,male,green,human / radiation,green,green,244.0,630.0,88.0,100.0,47.0,100.0,41.0,85.0,461.0
+human torch,False,male,blue,human / radiation,blond,,178.0,77.0,56.0,10.0,63.0,70.0,74.0,42.0,315.0
+husk,False,female,blue,mutant,blond,,170.0,58.0,63.0,63.0,35.0,78.0,53.0,64.0,356.0
+hybrid,False,male,brown,symbiote,black,,175.0,77.0,,,,,,,
+hydro-man,True,male,brown,,brown,,188.0,119.0,38.0,13.0,25.0,80.0,66.0,50.0,272.0
+hyperion,False,male,blue,eternal,red,,183.0,207.0,63.0,95.0,75.0,95.0,58.0,72.0,458.0
+iceman,False,male,brown,mutant,brown,,173.0,65.0,63.0,32.0,53.0,100.0,100.0,64.0,412.0
+ink,False,male,blue,mutant,no hair,,180.0,81.0,38.0,28.0,17.0,40.0,66.0,50.0,239.0
+invisible woman,False,female,blue,human / radiation,blond,,168.0,54.0,69.0,10.0,27.0,70.0,74.0,56.0,306.0
+iron fist,False,male,blue,human,blond,,180.0,79.0,75.0,23.0,35.0,42.0,43.0,100.0,318.0
+iron man,False,male,blue,human,black,,198.0,191.0,100.0,85.0,58.0,85.0,100.0,64.0,492.0
+iron monger,True,male,blue,,no hair,,,2.0,88.0,63.0,25.0,90.0,57.0,56.0,379.0
+jack of hearts,False,male,blue / white,human,brown,,155.0,79.0,63.0,55.0,100.0,30.0,70.0,30.0,348.0
+jean grey,False,female,green,mutant,red,,168.0,52.0,100.0,80.0,67.0,100.0,100.0,70.0,517.0
+jennifer kale,False,female,blue,,blond,,168.0,55.0,75.0,10.0,35.0,42.0,61.0,72.0,295.0
+jessica jones,False,female,brown,human,brown,,170.0,56.0,,,,,,,
+jigsaw,True,male,blue,,black,,188.0,113.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+john wraith,False,male,brown,,black,,183.0,88.0,75.0,12.0,35.0,28.0,65.0,80.0,295.0
+jolt,False,female,blue,,black,,165.0,49.0,63.0,12.0,27.0,32.0,31.0,42.0,207.0
+jubilee,False,female,red,mutant,black,,165.0,52.0,56.0,8.0,22.0,20.0,66.0,90.0,262.0
+juggernaut,False,male,blue,human,red,,287.0,855.0,44.0,100.0,42.0,100.0,74.0,70.0,430.0
+junkpile,True,male,,mutant,,,,,50.0,38.0,17.0,90.0,71.0,30.0,296.0
+justice,False,male,hazel,human,brown,,178.0,81.0,50.0,10.0,33.0,70.0,55.0,30.0,248.0
+kang,True,male,brown,,brown,,191.0,104.0,100.0,48.0,58.0,70.0,71.0,70.0,417.0
+kingpin,True,male,blue,human,no hair,,201.0,203.0,75.0,18.0,25.0,40.0,13.0,70.0,241.0
+klaw,True,male,red,human,no hair,red,188.0,97.0,63.0,38.0,33.0,100.0,62.0,60.0,356.0
+kraven ii,True,male,brown,human,black,,191.0,99.0,50.0,34.0,23.0,28.0,36.0,85.0,256.0
+kraven the hunter,True,male,brown,human,black,,183.0,106.0,63.0,32.0,35.0,42.0,26.0,85.0,283.0
+lady bullseye,True,female,,,black,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+lady deathstrike,True,female,brown,cyborg,black,,175.0,58.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+leader,True,male,green,,no hair,,178.0,63.0,100.0,10.0,12.0,14.0,58.0,42.0,236.0
+leech,False,male,,,,,,,25.0,5.0,12.0,14.0,62.0,14.0,132.0
+legion,False,male,green / blue,mutant,black,,175.0,59.0,,,,,,,
+living brain,True,,yellow,,,,198.0,360.0,75.0,53.0,35.0,56.0,31.0,28.0,278.0
+living tribunal,False,,blue,cosmic entity,no hair,gold,,,,,,,,,
+lizard,True,male,red,human,no hair,,203.0,230.0,38.0,51.0,27.0,70.0,40.0,56.0,282.0
+loki,True,male,green,asgardian,black,,193.0,236.0,88.0,57.0,47.0,85.0,85.0,56.0,418.0
+longshot,False,male,blue,human,blond,,188.0,36.0,50.0,10.0,27.0,10.0,71.0,70.0,238.0
+luke cage,False,male,brown,human,black,,198.0,191.0,44.0,55.0,23.0,95.0,35.0,64.0,316.0
+luna,False,female,,human,,,,,38.0,6.0,83.0,14.0,53.0,14.0,208.0
+lyja,False,female,green,,green,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+mach-iv,True,male,brown,,brown,,180.0,79.0,75.0,36.0,60.0,84.0,60.0,56.0,371.0
+machine man,False,,red,,black,,183.0,383.0,63.0,32.0,35.0,84.0,51.0,64.0,329.0
+magneto,True,male,grey,mutant,white,,188.0,86.0,88.0,80.0,27.0,84.0,91.0,80.0,450.0
+magus,True,male,black,,,,183.0,,88.0,100.0,70.0,99.0,100.0,74.0,531.0
+man-thing,False,male,red,,no hair,green,213.0,225.0,50.0,32.0,8.0,100.0,98.0,40.0,328.0
+man-wolf,False,male,brown,,auburn,,188.0,90.0,63.0,44.0,35.0,42.0,38.0,70.0,292.0
+mandarin,True,male,blue,human,white,,188.0,97.0,100.0,28.0,23.0,28.0,99.0,95.0,373.0
+mantis,False,female,green,human-kree,black,green,168.0,52.0,,,,,,,
+marvel girl,False,female,green,,red,,170.0,56.0,63.0,85.0,47.0,42.0,100.0,80.0,417.0
+maverick,False,male,blue,,black,,193.0,110.0,63.0,10.0,12.0,42.0,60.0,85.0,272.0
+medusa,False,female,green,inhuman,red,,180.0,59.0,75.0,34.0,35.0,70.0,35.0,56.0,305.0
+meltdown,False,female,blue,,blond,,165.0,54.0,38.0,10.0,12.0,42.0,58.0,64.0,224.0
+mephisto,True,male,white,,black,,198.0,140.0,88.0,85.0,35.0,95.0,100.0,42.0,445.0
+meteorite,False,female,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+mimic,False,male,brown,,brown,,188.0,101.0,63.0,67.0,47.0,56.0,79.0,42.0,354.0
+mister fantastic,False,male,brown,human / radiation,brown,,185.0,81.0,100.0,10.0,18.0,70.0,32.0,64.0,294.0
+mister knife,True,male,blue,spartoi,brown,,,,,,,,,,
+mister sinister,True,male,red,human / altered,black,,196.0,128.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+mockingbird,False,female,blue,human,blond,,175.0,61.0,,,,,,,
+modok,True,male,white,cyborg,brownn,,366.0,338.0,,,,,,,
+molten man,True,male,gold,,gold,,196.0,248.0,50.0,73.0,23.0,84.0,53.0,56.0,339.0
+moon knight,False,male,brown,human,brown,,188.0,101.0,50.0,36.0,23.0,42.0,28.0,75.0,254.0
+moonstone,True,female,blue,,blond,,180.0,59.0,56.0,67.0,47.0,52.0,79.0,80.0,381.0
+morlun,True,male,white / red,,black,,188.0,79.0,63.0,60.0,35.0,42.0,59.0,56.0,315.0
+morph,False,male,white,,no hair,,178.0,79.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+moses magnum,True,male,brown,,black,,175.0,72.0,75.0,28.0,12.0,42.0,55.0,56.0,268.0
+mr immortal,False,male,blue,mutant,blond,,188.0,70.0,,,,,,,
+ms marvel ii,False,female,blue,,red,,173.0,61.0,38.0,63.0,23.0,84.0,11.0,56.0,275.0
+multiple man,False,male,blue,,brown,,180.0,70.0,63.0,11.0,23.0,70.0,28.0,62.0,257.0
+mysterio,True,male,brown,human,no hair,,180.0,79.0,,,,,,,
+mystique,True,female,yellow (without irises),mutant,red / orange,blue,178.0,54.0,75.0,12.0,23.0,64.0,58.0,74.0,306.0
+namor,False,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+namora,False,female,blue,,blond,,180.0,85.0,50.0,85.0,42.0,42.0,41.0,64.0,324.0
+namorita,False,female,blue,,blond,,168.0,101.0,50.0,72.0,47.0,70.0,30.0,70.0,339.0
+nebula,True,female,blue,luphomoid,no hair,blue,185.0,83.0,,,,,,,
+negasonic teenage warhead,False,female,black,mutant,black,,,,,,,,,,
+nick fury,False,male,brown,human,brown / white,,185.0,99.0,75.0,11.0,23.0,42.0,25.0,100.0,276.0
+nightcrawler,False,male,yellow,,indigo,,175.0,88.0,50.0,10.0,47.0,14.0,52.0,80.0,253.0
+northstar,False,male,blue,,black,,180.0,83.0,50.0,18.0,83.0,56.0,70.0,70.0,347.0
+nova,False,male,brown,human,brown,,185.0,86.0,100.0,85.0,67.0,101.0,100.0,85.0,538.0
+odin,False,male,blue,god / eternal,white,,206.0,293.0,,,,,,,
+omega red,True,male,red,,blond,,211.0,191.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+one-above-all,False,,,cosmic entity,,,,,,,,,,,
+onslaught,True,male,red,mutant,no hair,,305.0,405.0,88.0,85.0,47.0,100.0,100.0,85.0,505.0
+penance,False,,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+penance i,False,female,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+penance ii,False,male,blue,,blond,,183.0,89.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+phoenix,False,female,green,mutant,red,,168.0,52.0,100.0,80.0,67.0,100.0,100.0,70.0,517.0
+plantman,True,male,green,mutant,grey,,183.0,87.0,,,,,,,
+polaris,False,female,green,mutant,green,,170.0,52.0,,,,,,,
+power man,False,male,,mutant,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+professor x,False,male,blue,mutant,no hair,,183.0,86.0,100.0,8.0,12.0,14.0,90.0,32.0,256.0
+proto-goblin,True,male,green,,blond,,,,63.0,38.0,23.0,48.0,22.0,28.0,222.0
+psylocke,False,female,blue,mutant,purple,,180.0,70.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+punisher,False,male,blue,human,black,,183.0,90.0,50.0,16.0,23.0,28.0,22.0,100.0,239.0
+purple man,True,male,purple,human,purple,purple,180.0,74.0,,,,,,,
+pyro,True,male,blue,,blond,,178.0,68.0,38.0,10.0,12.0,14.0,50.0,28.0,152.0
+quicksilver,False,male,blue,mutant,silver,,183.0,79.0,63.0,28.0,100.0,60.0,57.0,56.0,364.0
+quill,False,male,brown,,brown,,163.0,56.0,38.0,10.0,12.0,14.0,23.0,14.0,111.0
+razor-fist ii,True,male,blue,,no hair,,191.0,117.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+red hulk,False,male,yellow,human / radiation,black,red,213.0,630.0,50.0,88.0,47.0,95.0,59.0,75.0,414.0
+red skull,True,male,blue,,no hair,,188.0,108.0,75.0,10.0,12.0,14.0,19.0,80.0,210.0
+rhino,True,male,brown,human / radiation,brown,,196.0,320.0,25.0,80.0,43.0,90.0,37.0,85.0,360.0
+ripcord,False,female,green,,black,,180.0,72.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+rocket raccoon,False,male,brown,animal,brown,,122.0,25.0,50.0,5.0,23.0,28.0,28.0,64.0,198.0
+rogue,False,female,green,,brown / white,,173.0,54.0,75.0,10.0,12.0,28.0,80.0,80.0,285.0
+ronin,False,male,blue,human,blond,,191.0,104.0,38.0,10.0,27.0,32.0,21.0,90.0,218.0
+sabretooth,True,male,amber,mutant,blond,,198.0,171.0,55.0,53.0,25.0,90.0,28.0,100.0,351.0
+sage,False,female,blue,,black,,170.0,61.0,75.0,10.0,12.0,14.0,28.0,56.0,195.0
+sandman,False,male,brown,human,brown,,185.0,203.0,50.0,75.0,47.0,97.0,62.0,56.0,387.0
+sasquatch,False,male,red,,orange,,305.0,900.0,75.0,80.0,23.0,56.0,15.0,42.0,291.0
+scarlet spider,False,male,blue,human,blond,,178.0,74.0,75.0,53.0,60.0,74.0,39.0,56.0,357.0
+scarlet spider ii,False,male,brown,clone,brown,,193.0,113.0,88.0,55.0,60.0,40.0,30.0,56.0,329.0
+scarlet witch,True,female,blue,mutant,brown,,170.0,59.0,88.0,10.0,23.0,42.0,67.0,28.0,258.0
+scorpia,True,female,green,,red,,,,38.0,28.0,42.0,28.0,34.0,28.0,198.0
+scorpion,True,male,brown,human,brown,,211.0,310.0,50.0,52.0,60.0,85.0,49.0,80.0,376.0
+sebastian shaw,True,male,,mutant,,,,,,,,,,,
+sentry,False,male,blue,mutant,blond,,188.0,87.0,75.0,80.0,58.0,84.0,97.0,54.0,448.0
+shadow king,False,,red,,,,185.0,149.0,75.0,12.0,27.0,100.0,100.0,75.0,389.0
+shadowcat,False,female,hazel,mutant,brown,,168.0,50.0,88.0,8.0,21.0,25.0,69.0,70.0,281.0
+shang-chi,False,male,brown,human,black,,178.0,79.0,63.0,12.0,30.0,50.0,25.0,100.0,280.0
+shatterstar,False,male,brown,,red,,191.0,88.0,63.0,48.0,45.0,64.0,42.0,84.0,346.0
+she-hulk,False,female,green,human,green,,201.0,315.0,69.0,100.0,42.0,100.0,33.0,70.0,414.0
+she-thing,False,female,blue,human / radiation,no hair,,183.0,153.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+shocker,True,male,brown,human,brown,,175.0,79.0,63.0,10.0,23.0,70.0,63.0,56.0,285.0
+shriek,False,female,yellow / blue,,black,,173.0,52.0,50.0,10.0,23.0,28.0,45.0,42.0,198.0
+sif,False,female,blue,asgardian,black,,188.0,191.0,50.0,57.0,25.0,52.0,19.0,70.0,273.0
+silk,False,female,brown,human,black,,,,,,,,,,
+silver surfer,False,male,white,alien,no hair,silver,193.0,101.0,63.0,100.0,84.0,101.0,100.0,32.0,480.0
+silverclaw,False,female,brown,,black,,157.0,50.0,50.0,28.0,35.0,42.0,34.0,42.0,231.0
+siryn,True,female,blue,,strawberry blond,,168.0,52.0,38.0,8.0,47.0,28.0,50.0,42.0,213.0
+skaar,False,male,green,,black,,198.0,180.0,50.0,85.0,27.0,90.0,62.0,85.0,399.0
+snake-eyes,True,male,,animal,,,,,,,,,,,
+snowbird,False,female,white,,blond,,178.0,49.0,50.0,32.0,27.0,42.0,63.0,52.0,266.0
+songbird,False,female,green,,red / white,,165.0,65.0,75.0,36.0,27.0,42.0,55.0,56.0,291.0
+speedball,False,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+spider-carnage,True,male,,symbiote,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+spider-girl,False,female,blue,human,brown,,170.0,54.0,63.0,38.0,60.0,65.0,46.0,75.0,347.0
+spider-gwen,False,female,blue,human,blond,,165.0,56.0,,,,,,,
+spider-man,False,male,hazel,human,brown,,178.0,74.0,88.0,55.0,60.0,74.0,58.0,85.0,420.0
+spider-woman,False,female,green,human,black,,178.0,59.0,50.0,42.0,42.0,32.0,62.0,52.0,280.0
+spider-woman ii,False,female,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+spider-woman iii,False,female,brown,,brown,,173.0,55.0,50.0,48.0,27.0,42.0,60.0,28.0,255.0
+spider-woman iv,True,female,red,,white,,178.0,58.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+spyke,False,male,brown,mutant,blond,,183.0,83.0,50.0,12.0,17.0,60.0,41.0,30.0,210.0
+stacy x,False,female,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+star-lord,False,male,blue,human-spartoi,blond,,188.0,79.0,,,,,,,
+stardust,False,male,,,,,,,88.0,85.0,100.0,110.0,100.0,85.0,568.0
+storm,False,female,blue,mutant,white,,180.0,57.0,75.0,10.0,47.0,30.0,88.0,75.0,325.0
+sunspot,False,male,brown,mutant,black,,173.0,77.0,63.0,63.0,35.0,25.0,79.0,70.0,335.0
+swarm,True,male,yellow,mutant,no hair,yellow,196.0,47.0,,,,,,,
+synch,False,male,brown,,black,,180.0,74.0,75.0,67.0,23.0,28.0,74.0,56.0,323.0
+taskmaster,True,male,brown,human,brown,,188.0,99.0,,,,,,,
+tempest,False,female,brown,,black,,163.0,54.0,38.0,10.0,45.0,28.0,62.0,60.0,243.0
+thanos,True,male,red,eternal,no hair,purple,201.0,443.0,88.0,100.0,17.0,100.0,100.0,80.0,485.0
+thing,False,male,blue,human / radiation,no hair,,183.0,225.0,75.0,84.0,21.0,90.0,26.0,80.0,376.0
+thor,False,male,blue,asgardian,blond,,198.0,288.0,69.0,100.0,92.0,100.0,100.0,85.0,546.0
+thor girl,False,female,blue,asgardian,blond,,175.0,143.0,75.0,83.0,70.0,84.0,100.0,70.0,482.0
+thunderbird,False,male,brown,,black,,185.0,101.0,50.0,32.0,27.0,32.0,14.0,70.0,225.0
+thunderbird ii,False,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+thunderbird iii,False,male,brown,,black,,175.0,74.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+thunderstrike,False,male,blue,,blond,,198.0,288.0,63.0,80.0,70.0,84.0,31.0,72.0,400.0
+thundra,False,female,green,,red,,218.0,158.0,38.0,81.0,32.0,64.0,26.0,54.0,295.0
+tiger shark,True,male,grey,human,no hair,grey,185.0,203.0,38.0,72.0,42.0,70.0,21.0,28.0,271.0
+tigra,False,female,green,,auburn,,178.0,81.0,63.0,32.0,53.0,38.0,33.0,90.0,309.0
+tinkerer,True,male,brown,,white,,163.0,54.0,100.0,10.0,23.0,14.0,10.0,14.0,171.0
+toad,False,male,black,mutant,brown,green,175.0,76.0,50.0,34.0,58.0,56.0,49.0,28.0,275.0
+toxin,False,male,blue,symbiote,brown,,188.0,97.0,56.0,73.0,70.0,84.0,75.0,70.0,428.0
+triton,False,male,green,inhuman,no hair,green,188.0,86.0,,,,,,,
+ultragirl,False,female,blue,,blond,,168.0,105.0,50.0,80.0,35.0,70.0,35.0,80.0,350.0
+ultron,True,male,red,android,,silver,206.0,331.0,88.0,83.0,42.0,100.0,100.0,64.0,477.0
+utgard-loki,True,male,blue,frost giant,white,,15.2,58.0,50.0,80.0,23.0,84.0,72.0,64.0,373.0
+vagabond,False,female,blue,,strawberry blond,,168.0,54.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+valkyrie,False,female,blue,,blond,,191.0,214.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+vanisher,True,male,green,,no hair,,165.0,79.0,63.0,10.0,75.0,56.0,39.0,42.0,285.0
+venom,True,male,blue,symbiote,strawberry blond,,191.0,117.0,75.0,57.0,65.0,84.0,79.0,84.0,444.0
+venom ii,True,male,brown,,black,,175.0,50.0,50.0,57.0,47.0,70.0,54.0,56.0,334.0
+venom iii,True,male,brown,symbiote,brown,,229.0,334.0,63.0,73.0,35.0,90.0,66.0,56.0,383.0
+venompool,True,male,,symbiote,,,226.0,,,,,,,,
+vertigo ii,False,female,blue,,silver,,168.0,52.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+vindicator,False,female,green,human,red,,165.0,54.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+vision,False,male,gold,android,no hair,red,191.0,135.0,100.0,72.0,54.0,95.0,76.0,70.0,467.0
+vision ii,False,,red,,no hair,,191.0,135.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+vulcan,False,male,black,,black,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+vulture,True,male,brown,human,no hair,,180.0,79.0,63.0,22.0,47.0,56.0,40.0,56.0,284.0
+walrus,True,male,blue,human,black,,183.0,162.0,50.0,28.0,8.0,50.0,11.0,20.0,167.0
+war machine,False,male,brown,human,brown,,185.0,95.0,63.0,80.0,63.0,100.0,100.0,85.0,491.0
+warbird,False,female,blue,,blond,,180.0,54.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+warlock,False,male,red,,blond,,188.0,108.0,88.0,36.0,79.0,95.0,71.0,95.0,464.0
+warpath,False,male,brown,mutant,black,,218.0,158.0,38.0,72.0,47.0,70.0,26.0,84.0,337.0
+wasp,False,female,blue,human,auburn,,163.0,50.0,63.0,8.0,58.0,52.0,23.0,42.0,246.0
+watcher,False,male,,,,,,,100.0,80.0,67.0,89.0,100.0,56.0,492.0
+weapon xi,True,male,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+white queen,False,female,blue,,blond,,178.0,65.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+winter soldier,False,male,brown,human,brown,,175.0,117.0,56.0,32.0,35.0,65.0,60.0,84.0,332.0
+wiz kid,False,,brown,,black,,140.0,39.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+wolfsbane,False,female,green,,auburn,,366.0,473.0,38.0,16.0,35.0,42.0,26.0,42.0,199.0
+wolverine,False,male,blue,mutant,black,,160.0,135.0,55.0,32.0,38.0,100.0,44.0,100.0,369.0
+wonder man,False,male,red,,black,,188.0,171.0,75.0,100.0,53.0,90.0,64.0,64.0,446.0
+wondra,False,female,,,,,,,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+wyatt wingfoot,False,male,brown,,black,,196.0,117.0,10.0,10.0,12.0,1.0,1.0,56.0,90.0
+x-23,False,female,green,mutant / clone,black,,155.0,50.0,75.0,24.0,35.0,90.0,27.0,85.0,336.0
+x-man,False,male,blue,,brown,,175.0,61.0,88.0,53.0,53.0,95.0,92.0,84.0,465.0
+yellow claw,True,male,blue,,no hair,,188.0,95.0,1.0,1.0,1.0,1.0,0.0,1.0,5.0
+yellowjacket,False,male,blue,human,blond,,183.0,83.0,88.0,10.0,12.0,28.0,12.0,14.0,164.0
+yellowjacket ii,False,female,blue,human,strawberry blond,,165.0,52.0,50.0,10.0,35.0,28.0,31.0,28.0,182.0
+ymir,False,male,white,frost giant,no hair,white,304.8,,50.0,100.0,27.0,100.0,83.0,28.0,388.0
