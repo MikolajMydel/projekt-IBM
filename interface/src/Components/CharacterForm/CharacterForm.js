@@ -1,8 +1,6 @@
 import {eyeColors, skinColors, hairColors, races} from "./datalists.js";
 import styles from "./CharacterForm.module.scss";
 import react from 'react';
-import * as api from "./apiClient";
-
 
 const extractFormData = (form, fields) => {
     const formData = {};
@@ -18,6 +16,22 @@ const extractFormData = (form, fields) => {
     return formData;
 }
 
+async function postData(url, data){
+    const response = await fetch(url, {
+        method: 'POST',
+        mode: 'cors',
+
+        headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+
+        body: JSON.stringify(data),
+    });
+
+    return response.json();
+}
+
 class CharacterForm extends react.Component {
 
     fields = [
@@ -30,30 +44,14 @@ class CharacterForm extends react.Component {
         e.preventDefault();
         const characterInfo = extractFormData(e.target, this.fields);
         //Object.keys(characterInfo)
+        const payload = {"input_data":
+            {"fields": Object.keys(characterInfo),
+            "values": [[Object.values(characterInfo)]]
+            }};
 
-        api.getToken((err) => console.log(err), function () {
-            let tokenResponse;
-            try {
-                tokenResponse = JSON.parse(this.responseText);
-            } catch(ex) {
-                // TODO: handle parsing exception
-            }
-            // NOTE: manually define and pass the array(s) of values to be scored in the next line
-            const payload = `{"input_data": [{"fields": [${Object.keys(characterInfo)}], "values": [[${Object.values(characterInfo)}]]}]}`;
-            const scoring_url = "https://eu-de.ml.cloud.ibm.com/ml/v4/deployments/marvel_characters_normalized_1/predictions?version=2022-04-27";
-            api.apiPost(scoring_url, tokenResponse.access_token, payload, function (resp) {
-                let parsedPostResponse;
-                try {
-                    parsedPostResponse = JSON.parse(this.responseText);
-                } catch (ex) {
-                    // TODO: handle parsing exception
-                }
-                console.log("Scoring response");
-                console.log(parsedPostResponse);
-            }, function (error) {
-                console.log(error);
-            });
-        });
+        postData("/api/character", payload).then(
+            data => console.log(data)
+        )
     }
 
     render() {
