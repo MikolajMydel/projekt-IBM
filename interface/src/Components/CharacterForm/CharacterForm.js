@@ -8,9 +8,15 @@ const extractFormData = (form, fields) => {
 
     for (let field of fields){
         inputValue = form[field].value;
-        if (inputValue.length !== 0)
-            formData[field] = inputValue;
+        formData[field] = inputValue;
+    }
 
+    const stats = ["intelligence",
+    "strength", "speed", "durability", "power", "combat"]
+
+    formData["total"] = 0;
+    for (let parameter of stats){
+        formData["total"] += formData[parameter];
     }
 
     return formData;
@@ -37,20 +43,27 @@ class CharacterForm extends react.Component {
     fields = [
         "name", "gender", "eyeColor", "race", "hairColor",
         "skinColor", "height", "weight", "intelligence",
-        "strength", "speed", "durability", "power", "combat",
+        "strength", "speed", "durability", "power", "combat"
     ]
 
     onSubmit = (e) => {
         e.preventDefault();
         const characterInfo = extractFormData(e.target, this.fields);
         //Object.keys(characterInfo)
+
         const payload = {"input_data":
-            {"fields": Object.keys(characterInfo),
-            "values": [[Object.values(characterInfo)]]
-            }};
+            [{"fields": Object.keys(characterInfo),
+            "values": [Object.values(characterInfo)]
+            }]
+        }
 
         postData("/api/character", payload).then(
-            data => console.log(data)
+            data => {
+                const predictions = data.predictions;
+                for (let prediction of predictions){
+                    alert(prediction.values[0]);
+                }
+            }
         )
     }
 
@@ -62,7 +75,7 @@ class CharacterForm extends react.Component {
                     onSubmit={this.onSubmit}
                 >
                     <div className={styles.form_group}>
-                        <input type="text" className={styles.form_input} placeholder=" "
+                        <input required type="text" className={styles.form_input} placeholder=" "
                             name="name" />
                         <label className={styles.form_label}>
                             Name
@@ -70,7 +83,7 @@ class CharacterForm extends react.Component {
                     </div>
 
                     <div className={styles.form_group}>
-                        <input type="text" className={styles.form_input} placeholder=" "
+                        <input required type="text" className={styles.form_input} placeholder=" "
                             name="gender" />
                         <label className={styles.form_label}>
                             Gender
@@ -78,7 +91,7 @@ class CharacterForm extends react.Component {
                     </div>
 
                     <div className={styles.form_group}>
-                        <input type="text" list="eyeColor" className={styles.form_input} placeholder=" "
+                        <input required type="text" list="eyeColor" className={styles.form_input} placeholder=" "
                             name="eyeColor"/>
                         <label className={styles.form_label}>
                             Eye color
@@ -92,7 +105,7 @@ class CharacterForm extends react.Component {
                     </div>
 
                     <div className={styles.form_group}>
-                        <input type="text" list="race" className={styles.form_input} placeholder=" "
+                        <input required type="text" list="race" className={styles.form_input} placeholder=" "
                             name="race" />
                         <label className={styles.form_label}>
                             Race
@@ -106,7 +119,7 @@ class CharacterForm extends react.Component {
                     </div>
 
                     <div className={styles.form_group}>
-                        <input type="text" list="hairColor" className={styles.form_input} placeholder=" "
+                        <input required type="text" list="hairColor" className={styles.form_input} placeholder=" "
                             name="hairColor"/>
                         <label className={styles.form_label}>
                             Hair color
@@ -120,7 +133,7 @@ class CharacterForm extends react.Component {
                     </div>
 
                     <div className={styles.form_group}>
-                        <input type="text" list="skinColor" className={styles.form_input} placeholder=" "
+                        <input required type="text" list="skinColor" className={styles.form_input} placeholder=" "
                             name="skinColor" />
                         <label className={styles.form_label}>
                             Skin color
@@ -134,7 +147,7 @@ class CharacterForm extends react.Component {
                     </div>
 
                     <div className={styles.form_group}>
-                        <input type="number" className={styles.form_input} placeholder=" "
+                        <input required type="number" className={styles.form_input} placeholder=" "
                             name="height"/>
                         <label className={styles.form_label}>
                             Height
@@ -142,7 +155,7 @@ class CharacterForm extends react.Component {
                     </div>
 
                     <div className={styles.form_group}>
-                        <input type="number" className={styles.form_input} placeholder=" "
+                        <input required type="number" className={styles.form_input} placeholder=" "
                             name="weight"/>
                         <label className={styles.form_label}>
                             Weight
@@ -153,42 +166,42 @@ class CharacterForm extends react.Component {
                         <label>
                             Intelligence
                         </label><br/>
-                        <input type="range" name="intelligence" />
+                        <input required type="range" name="intelligence" />
                     </div>
 
                     <div className={styles.form_range}>
                         <label>
                             Strength
                         </label><br/>
-                        <input type="range" name="strength" />
+                        <input required type="range" name="strength" />
                     </div>
 
                     <div className={styles.form_range}>
                         <label>
                             Speed
                         </label><br/>
-                        <input type="range" name="speed" />
+                        <input required type="range" name="speed" />
                     </div>
 
                     <div className={styles.form_range}>
                         <label>
                             Durability
                         </label><br/>
-                        <input type="range" name="durability" />
+                        <input required type="range" name="durability" />
                     </div>
 
                     <div className={styles.form_range}>
                         <label>
                             Power
                         </label><br/>
-                        <input type="range" name="power" />
+                        <input required type="range" name="power" />
                     </div>
 
                     <div className={styles.form_range}>
                         <label>
                             Combat
                         </label><br/>
-                        <input type="range" name="combat" />
+                        <input required type="range" name="combat" />
                     </div>
                     <input type="submit" value="Check" className={styles.form_button}>
                     </input>

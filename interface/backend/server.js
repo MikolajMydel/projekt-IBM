@@ -34,11 +34,11 @@ app.use(express.json());
 app.use(express.urlencoded());
 
 // This displays message that the server running and listening to specified port
-app.listen(port, () => console.log(`Listening on port ${port}`)); //Line 6
+app.listen(port, () => console.log(`Listening on port ${port}`));
 
-app.get('/express_backend', (req, res) => { //Line 9
-    res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' }); //Line 10
-});
+app.get('/express_backend', (req, res) => {
+    res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+  });
 
 app.post("/api/character", (req, res) => {
     getToken((err) => console.log(err), function () {
@@ -51,19 +51,22 @@ app.post("/api/character", (req, res) => {
 
         // NOTE: manually define and pass the array(s) of values to be scored in the next line
         const payload = JSON.stringify(req.body);
-        const scoring_url = "https://eu-de.ml.cloud.ibm.com/ml/v4/deployments/marvel_characters_normalized_1/predictions?version=2022-04-27";
+        const scoring_url = "https://eu-de.ml.cloud.ibm.com/ml/v4/deployments/marvel_bad_characters1/predictions?version=2022-04-21";
         apiPost(scoring_url, tokenResponse.access_token, payload, function (resp) {
+            /*
             let parsedPostResponse;
             try {
                 parsedPostResponse = JSON.parse(this.responseText);
             } catch (ex) {
                 // TODO: handle parsing exception
-            }
-            console.log("Scoring response");
-            console.log(parsedPostResponse);
+            } */
+
+            console.log(this.responseText);
+            res.status(200).send(this.responseText);
         }, function (error) {
             console.log(error);
         });
+
     });
 });
 
