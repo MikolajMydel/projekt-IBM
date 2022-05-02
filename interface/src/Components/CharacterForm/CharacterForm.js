@@ -235,7 +235,7 @@ class CharacterForm extends react.Component {
                         </label>
                     </div>
                     </div>
-                    <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 2) }>
+                    <div className={styles.form_page} onClick={ (e) => this.validatePage(e, 2) }>
                         <h2 className={styles.form_pageHeader}>Statistics</h2>
                         <div className={styles.form_range}>
                             <label>

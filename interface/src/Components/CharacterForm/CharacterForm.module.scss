@@ -70,9 +70,29 @@ body{
             width: 33%;
             height: 100%;
 
-            &Valid {
+            position: relative;
+	        overflow: hidden;
+
+            &:before {
+
+                transform: scaleX(0);
+                transform-origin: left;
+
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+
                 background-color: lime;
+                transition: all .5s ease-in-out;
             }
+
+            &Valid:before {
+                transform: scaleX(100%);
+            }
+
         }
     }
 
