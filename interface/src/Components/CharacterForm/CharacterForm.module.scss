@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -37,10 +43,57 @@ body{
 	}
 }
 
+.form {
+    font-family: 'Poppins', sans-serif;
+
+    width: 300%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &_navigation {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        right: -10px;
+        height: 50px;
+
+        &Button {
+            border: none;
+            border-right: 1px solid rgba(46, 46, 46, 0.95);
+            outline: none;
+            cursor: pointer;
+            width: 33%;
+            height: 100%;
+        }
+    }
+
+    &_page {
+        padding: 50px;
+
+        width: 33.3%;
+        height: 100%;
+
+
+        &Header {
+            font-size: 2rem;
+            color: #fff;
+
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+    }
+}
+
 .form_wrapper{
+    overflow: hidden;
+
+    position: relative;
+
     width: 30%;
-    padding: 30px 30px 30px 30px;
-    margin: 15px auto;   
+    margin: 15px auto;
     background-color: rgba(46, 46, 46, 0.95);
     border-radius: 25px;
     box-shadow: 0 15px 35px rgba(34, 34, 34, 0.9),0 5px 15px rgba(0,0,0, 0.7);
@@ -59,10 +112,10 @@ body{
 }
 
 .form_group {
-    position:relative;  
+    position:relative;
 
     & + .form_group {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 }
 
@@ -88,6 +141,8 @@ body{
     padding-left: 10px;
     color: white;
     border-radius: 10px;
+
+    font-size: 1em;
 
     &:hover{
         border-color: #95d3fc;

@@ -40,6 +40,13 @@ async function postData(url, data){
 
 class CharacterForm extends react.Component {
 
+    constructor() {
+        super();
+        this.state = {
+            "pageNumber": 0,
+        }
+    }
+
     fields = [
         "name", "gender", "eyeColor", "race", "hairColor",
         "skinColor", "height", "weight", "intelligence",
@@ -67,43 +74,66 @@ class CharacterForm extends react.Component {
         )
     }
 
+    changePage = (pageNumber) => {
+        this.setState({
+            "currentPage": pageNumber,
+        })
+    }
+
     render() {
         return (
             <div className={styles.form_wrapper}>
+                <div className={styles.form_navigation}>
+                    <button className={styles.form_navigationButton}
+                        onClick={ () => this.changePage(0)}
+                    ></button>
+
+                    <button className={styles.form_navigationButton}
+                        onClick={ () => this.changePage(1)}
+                    ></button>
+
+                    <button className={styles.form_navigationButton}
+                        onClick={ () => this.changePage(2)}
+                    ></button>
+
+                </div>
                 <form action="." method="GET"
-                    className={styles.Form}
+                    className={styles.form}
                     onSubmit={this.onSubmit}
                 >
-                    <div className={styles.form_group}>
-                        <input required type="text" className={styles.form_input} placeholder=" "
-                            name="name" />
-                        <label className={styles.form_label}>
-                            Name
-                        </label>
+                    <div className={styles.form_page}>
+                        <h2 className={styles.form_pageHeader}>Personal data</h2>
+                        <div className={styles.form_group}>
+                            <input required type="text" className={styles.form_input} placeholder=" "
+                                name="name" />
+                            <label className={styles.form_label}>
+                                Name
+                            </label>
+                        </div>
+
+                        <div className={styles.form_group}>
+                            <input required type="text" className={styles.form_input} placeholder=" "
+                                name="gender" />
+                            <label className={styles.form_label}>
+                                Gender
+                            </label>
+                        </div>
                     </div>
+                    <div className={styles.form_page}>
+                    <h2 className={styles.form_pageHeader}>Appearance</h2>
+                        <div className={styles.form_group}>
+                            <input required type="text" list="eyeColor" className={styles.form_input} placeholder=" "
+                                name="eyeColor"/>
+                            <label className={styles.form_label}>
+                                Eye color
+                            </label>
 
-                    <div className={styles.form_group}>
-                        <input required type="text" className={styles.form_input} placeholder=" "
-                            name="gender" />
-                        <label className={styles.form_label}>
-                            Gender
-                        </label>
-                    </div>
-
-                    <div className={styles.form_group}>
-                        <input required type="text" list="eyeColor" className={styles.form_input} placeholder=" "
-                            name="eyeColor"/>
-                        <label className={styles.form_label}>
-                            Eye color
-                        </label>
-
-                        <datalist id="eyeColor">
-                            {eyeColors.map((value) => {
-                                return <option value={value.toLowerCase()} />
-                            })}
-                        </datalist>
-                    </div>
-
+                            <datalist id="eyeColor">
+                                {eyeColors.map((value) => {
+                                    return <option value={value.toLowerCase()} />
+                                })}
+                            </datalist>
+                        </div>
                     <div className={styles.form_group}>
                         <input required type="text" list="race" className={styles.form_input} placeholder=" "
                             name="race" />
@@ -161,50 +191,53 @@ class CharacterForm extends react.Component {
                             Weight
                         </label>
                     </div>
-
-                    <div className={styles.form_range}>
-                        <label>
-                            Intelligence
-                        </label><br/>
-                        <input required type="range" name="intelligence" />
                     </div>
+                    <div className={styles.form_page}>
+                        <h2 className={styles.form_pageHeader}>Statistics</h2>
+                        <div className={styles.form_range}>
+                            <label>
+                                Intelligence
+                            </label><br/>
+                            <input required type="range" name="intelligence" />
+                        </div>
 
-                    <div className={styles.form_range}>
-                        <label>
-                            Strength
-                        </label><br/>
-                        <input required type="range" name="strength" />
-                    </div>
+                        <div className={styles.form_range}>
+                            <label>
+                                Strength
+                            </label><br/>
+                            <input required type="range" name="strength" />
+                        </div>
 
-                    <div className={styles.form_range}>
-                        <label>
-                            Speed
-                        </label><br/>
-                        <input required type="range" name="speed" />
-                    </div>
+                        <div className={styles.form_range}>
+                            <label>
+                                Speed
+                            </label><br/>
+                            <input required type="range" name="speed" />
+                        </div>
 
-                    <div className={styles.form_range}>
-                        <label>
-                            Durability
-                        </label><br/>
-                        <input required type="range" name="durability" />
-                    </div>
+                        <div className={styles.form_range}>
+                            <label>
+                                Durability
+                            </label><br/>
+                            <input required type="range" name="durability" />
+                        </div>
 
-                    <div className={styles.form_range}>
-                        <label>
-                            Power
-                        </label><br/>
-                        <input required type="range" name="power" />
-                    </div>
+                        <div className={styles.form_range}>
+                            <label>
+                                Power
+                            </label><br/>
+                            <input required type="range" name="power" />
+                        </div>
 
-                    <div className={styles.form_range}>
-                        <label>
-                            Combat
-                        </label><br/>
-                        <input required type="range" name="combat" />
+                        <div className={styles.form_range}>
+                            <label>
+                                Combat
+                            </label><br/>
+                            <input required type="range" name="combat" />
+                        </div>
+                        <input type="submit" value="Check" className={styles.form_button}>
+                        </input>
                     </div>
-                    <input type="submit" value="Check" className={styles.form_button}>
-                    </input>
                 </form>
             </div>
         )
