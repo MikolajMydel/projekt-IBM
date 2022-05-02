@@ -54,6 +54,9 @@ body{
 
     &_navigation {
         position: absolute;
+
+        // above form
+        z-index: 1;
         top: 0;
         left: -10px;
         right: -10px;
@@ -75,15 +78,16 @@ body{
         width: 33.3%;
         height: 100%;
 
+        transition: transform .5s ease-in-out;
+        transform: translateX( calc(-100% * var(--page-number)) );
 
         &Header {
             font-size: 2rem;
             color: #fff;
 
-            margin-bottom: 50px;
+            margin: 50px 0;
             text-align: center;
         }
-
     }
 }
 

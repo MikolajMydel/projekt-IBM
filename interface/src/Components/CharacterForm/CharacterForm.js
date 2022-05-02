@@ -100,12 +100,17 @@ class CharacterForm extends react.Component {
                 <form action="." method="GET"
                     className={styles.form}
                     onSubmit={this.onSubmit}
+                    style={{
+                        // variable needed to paginate using css
+                        "--page-number": this.state.currentPage,
+                    }}
                 >
                     <div className={styles.form_page}>
                         <h2 className={styles.form_pageHeader}>Personal data</h2>
                         <div className={styles.form_group}>
                             <input required type="text" className={styles.form_input} placeholder=" "
-                                name="name" />
+                                name="name"
+                                />
                             <label className={styles.form_label}>
                                 Name
                             </label>
