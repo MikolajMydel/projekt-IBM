@@ -64,11 +64,15 @@ body{
 
         &Button {
             border: none;
-            border-right: 1px solid rgba(46, 46, 46, 0.95);
+            border-right: 3px solid rgba(46, 46, 46, 0.95);
             outline: none;
             cursor: pointer;
             width: 33%;
             height: 100%;
+
+            &Valid {
+                background-color: lime;
+            }
         }
     }
 

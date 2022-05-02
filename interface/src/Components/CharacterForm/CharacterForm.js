@@ -44,6 +44,8 @@ class CharacterForm extends react.Component {
         super();
         this.state = {
             "pageNumber": 0,
+            "pagesValidity": [false, false, false],
+
         }
     }
 
@@ -80,19 +82,55 @@ class CharacterForm extends react.Component {
         })
     }
 
+    validatePage = (e, pageNumber) => {
+        const childNodes = Array.from(e.currentTarget.childNodes);
+        const childInputs = [];
+
+        while ( childNodes.length !== 0 ){
+            const node = childNodes.pop();
+            if (node.tagName){
+                const nodeType = node.tagName.toLowerCase();
+
+                if (nodeType === "input") childInputs.push(node);
+                else {
+                    childNodes.push( ...node.childNodes );
+                }
+            }
+        }
+
+        let isValid = true;
+        for(let input of childInputs){
+            if(!input.validity.valid) isValid = false;
+        }
+        if ( this.state.pagesValidity[pageNumber] !== isValid ) {
+            const pagesValidity = [...this.state.pagesValidity];
+            pagesValidity[pageNumber] = isValid;
+            this.setState({"pagesValidity": pagesValidity});
+        }
+    }
+
     render() {
         return (
             <div className={styles.form_wrapper}>
                 <div className={styles.form_navigation}>
-                    <button className={styles.form_navigationButton}
+                    <button className={`
+                        ${styles.form_navigationButton}
+                        ${this.state.pagesValidity[0] ? styles.form_navigationButtonValid : ""}
+                    `}
                         onClick={ () => this.changePage(0)}
                     ></button>
 
-                    <button className={styles.form_navigationButton}
+                    <button className={`
+                        ${styles.form_navigationButton}
+                        ${this.state.pagesValidity[1] ? styles.form_navigationButtonValid : ""}
+                    `}
                         onClick={ () => this.changePage(1)}
                     ></button>
 
-                    <button className={styles.form_navigationButton}
+                    <button className={`
+                        ${styles.form_navigationButton}
+                        ${this.state.pagesValidity[2] ? styles.form_navigationButtonValid : ""}
+                    `}
                         onClick={ () => this.changePage(2)}
                     ></button>
 
@@ -105,7 +143,7 @@ class CharacterForm extends react.Component {
                         "--page-number": this.state.currentPage,
                     }}
                 >
-                    <div className={styles.form_page}>
+                    <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 0) }>
                         <h2 className={styles.form_pageHeader}>Personal data</h2>
                         <div className={styles.form_group}>
                             <input required type="text" className={styles.form_input} placeholder=" "
@@ -124,7 +162,7 @@ class CharacterForm extends react.Component {
                             </label>
                         </div>
                     </div>
-                    <div className={styles.form_page}>
+                    <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 1)}>
                     <h2 className={styles.form_pageHeader}>Appearance</h2>
                         <div className={styles.form_group}>
                             <input required type="text" list="eyeColor" className={styles.form_input} placeholder=" "
@@ -197,7 +235,7 @@ class CharacterForm extends react.Component {
                         </label>
                     </div>
                     </div>
-                    <div className={styles.form_page}>
+                    <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 2) }>
                         <h2 className={styles.form_pageHeader}>Statistics</h2>
                         <div className={styles.form_range}>
                             <label>
