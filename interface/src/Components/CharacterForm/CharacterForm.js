@@ -1,6 +1,7 @@
 import {eyeColors, skinColors, hairColors, races} from "./datalists.js";
 import styles from "./CharacterForm.module.scss";
 import react from 'react';
+import InputWithUnit from "./InputWithUnit/InputWithUnit";
 
 const extractFormData = (form, fields) => {
     const formData = {};
@@ -220,16 +221,32 @@ class CharacterForm extends react.Component {
                     </div>
 
                     <div className={styles.form_group}>
-                        <input required type="number" className={styles.form_input} placeholder=" "
-                            name="height"/>
+                        <InputWithUnit
+                            type="number"
+                            className={styles.form_input}
+                            placeholder=" "
+                            name="height"
+                            unit="cm"
+                            max="1000"
+                            min="1"
+                            required={true}
+                        />
                         <label className={styles.form_label}>
                             Height
                         </label>
                     </div>
 
                     <div className={styles.form_group}>
-                        <input required type="number" className={styles.form_input} placeholder=" "
-                            name="weight"/>
+                        <InputWithUnit
+                                type="number"
+                                className={styles.form_input}
+                                placeholder=" "
+                                name="weight"
+                                unit="kg"
+                                max="10000"
+                                min="0.01"
+                                required={true}
+                        />
                         <label className={styles.form_label}>
                             Weight
                         </label>
