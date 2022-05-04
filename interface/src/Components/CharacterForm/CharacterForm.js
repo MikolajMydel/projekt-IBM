@@ -161,32 +161,34 @@ class CharacterForm extends react.Component {
 
         }
 
+        this.fields = [
+            "name", "gender", "eyeColor", "race", "hairColor",
+            "skinColor", "height", "weight", "intelligence",
+            "strength", "speed", "durability", "power", "combat"
+        ];
+
         this.ref = react.createRef();
         this.pagesQuantity = 3;
     }
 
-    fields = [
-        "name", "gender", "eyeColor", "race", "hairColor",
-        "skinColor", "height", "weight", "intelligence",
-        "strength", "speed", "durability", "power", "combat"
-    ]
-
-    checkCharactersAlignment  = (e) => {
+    checkCharactersAlignment = (e) => {
         e.preventDefault();
 
         const characters = this.state.charactersData;
-
         const payload = {"input_data":
-            [{"fields": Object.keys(characters[0]),
-            "values": characters
-            }]
+            [
+            {
+                "fields": this.fields,
+                "values": characters
+            }
+            ]
         }
 
         postData("/api/character", payload).then(
             data => {
                 const predictions = data.predictions;
-                for (let prediction of predictions){
-                    alert(prediction.values[0]);
+                for (let prediction of predictions[0].values){
+                    alert(prediction[0]);
                 }
             }
         )
@@ -194,7 +196,7 @@ class CharacterForm extends react.Component {
 
     addCharacter = (characterInfo) => {
         const charactersCopy = [...this.state.charactersData];
-        console.log(this.state.editedCharacter);
+
         if (typeof this.state.editedCharacter === "undefined") charactersCopy.push(characterInfo);
         else charactersCopy[this.state.editedCharacter] = characterInfo;
 
