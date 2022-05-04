@@ -4,6 +4,7 @@ import react from 'react';
 
 import InputWithUnit from "./InputWithUnit/InputWithUnit";
 import InputRange from "./InputRange/InputRange.js";
+import PageNavigation from "./PageNavigation/PageNavigation.js";
 
 const extractFormData = (form, fields) => {
     const formData = {};
@@ -48,8 +49,9 @@ class CharacterForm extends react.Component {
         this.state = {
             "pageNumber": 0,
             "pagesValidity": [false, false, false],
-
         }
+
+        this.pagesQuantity = 3;
     }
 
     fields = [
@@ -61,7 +63,6 @@ class CharacterForm extends react.Component {
     onSubmit = (e) => {
         e.preventDefault();
         const characterInfo = extractFormData(e.target, this.fields);
-        //Object.keys(characterInfo)
 
         const payload = {"input_data":
             [{"fields": Object.keys(characterInfo),
@@ -80,9 +81,24 @@ class CharacterForm extends react.Component {
     }
 
     changePage = (pageNumber) => {
+        if (pageNumber < 0)
+            pageNumber = 0
+        else if (pageNumber > this.pagesQuantity - 1)
+            pageNumber = this.pagesQuantity - 1;
+
         this.setState({
-            "currentPage": pageNumber,
+            "pageNumber": pageNumber,
         })
+    }
+
+    goBackwards = (e) => {
+        e.preventDefault();
+        this.changePage(this.state.pageNumber - 1);
+    }
+
+    goForwards = (e) => {
+        e.preventDefault();
+        this.changePage(this.state.pageNumber + 1);
     }
 
     validatePage = (e, pageNumber) => {
@@ -143,7 +159,7 @@ class CharacterForm extends react.Component {
                     onSubmit={this.onSubmit}
                     style={{
                         // variable needed to paginate using css
-                        "--page-number": this.state.currentPage,
+                        "--page-number": this.state.pageNumber,
                     }}
                 >
                     <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 0) }>
@@ -164,9 +180,10 @@ class CharacterForm extends react.Component {
                                 Gender
                             </label>
                         </div>
+                        <PageNavigation goForwards={this.goForwards} />
                     </div>
                     <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 1)}>
-                    <h2 className={styles.form_pageHeader}>Appearance</h2>
+                        <h2 className={styles.form_pageHeader}>Appearance</h2>
                         <div className={styles.form_group}>
                             <input required type="text" list="eyeColor" className={styles.form_input} placeholder=" "
                                 name="eyeColor"/>
@@ -180,77 +197,81 @@ class CharacterForm extends react.Component {
                                 })}
                             </datalist>
                         </div>
-                    <div className={styles.form_group}>
-                        <input required type="text" list="race" className={styles.form_input} placeholder=" "
-                            name="race" />
-                        <label className={styles.form_label}>
-                            Race
-                        </label>
 
-                        <datalist id="race">
-                            {races.map((value) => {
-                                return <option value={value.toLowerCase()} />
-                            })}
-                        </datalist>
-                    </div>
+                        <div className={styles.form_group}>
+                            <input required type="text" list="race" className={styles.form_input} placeholder=" "
+                                name="race" />
+                            <label className={styles.form_label}>
+                                Race
+                            </label>
 
-                    <div className={styles.form_group}>
-                        <input required type="text" list="hairColor" className={styles.form_input} placeholder=" "
-                            name="hairColor"/>
-                        <label className={styles.form_label}>
-                            Hair color
-                        </label>
-
-                        <datalist id="hairColor">
-                            {hairColors.map((value) => {
+                            <datalist id="race">
+                                {races.map((value) => {
                                     return <option value={value.toLowerCase()} />
-                            })}
-                        </datalist>
-                    </div>
+                                })}
+                            </datalist>
+                        </div>
 
-                    <div className={styles.form_group}>
-                        <input required type="text" list="skinColor" className={styles.form_input} placeholder=" "
-                            name="skinColor" />
-                        <label className={styles.form_label}>
-                            Skin color
-                        </label>
+                        <div className={styles.form_group}>
+                            <input required type="text" list="hairColor" className={styles.form_input} placeholder=" "
+                                name="hairColor"/>
+                            <label className={styles.form_label}>
+                                Hair color
+                            </label>
 
-                        <datalist id="skinColor">
-                            {skinColors.map((value) => {
-                                    return <option value={value.toLowerCase()} />
-                            })}
-                        </datalist>
-                    </div>
+                            <datalist id="hairColor">
+                                {hairColors.map((value) => {
+                                        return <option value={value.toLowerCase()} />
+                                })}
+                            </datalist>
+                        </div>
 
-                    <div className={styles.form_group}>
-                        <InputWithUnit
-                            type="number"
-                            className={styles.form_input}
-                            placeholder=" "
-                            name="height"
-                            unit="cm"
-                            min="0"
-                            required={true}
-                        />
-                        <label className={styles.form_label}>
-                            Height
-                        </label>
-                    </div>
+                        <div className={styles.form_group}>
+                            <input required type="text" list="skinColor" className={styles.form_input} placeholder=" "
+                                name="skinColor" />
+                            <label className={styles.form_label}>
+                                Skin color
+                            </label>
 
-                    <div className={styles.form_group}>
-                        <InputWithUnit
+                            <datalist id="skinColor">
+                                {skinColors.map((value) => {
+                                        return <option value={value.toLowerCase()} />
+                                })}
+                            </datalist>
+                        </div>
+
+                        <div className={styles.form_group}>
+                            <InputWithUnit
                                 type="number"
                                 className={styles.form_input}
                                 placeholder=" "
-                                name="weight"
-                                unit="kg"
+                                name="height"
+                                unit="cm"
                                 min="0"
                                 required={true}
-                        />
-                        <label className={styles.form_label}>
-                            Weight
-                        </label>
-                    </div>
+                            />
+                            <label className={styles.form_label}>
+                                Height
+                            </label>
+                        </div>
+
+                        <div className={styles.form_group}>
+                            <InputWithUnit
+                                    type="number"
+                                    className={styles.form_input}
+                                    placeholder=" "
+                                    name="weight"
+                                    unit="kg"
+                                    min="0"
+                                    required={true}
+                            />
+                            <label className={styles.form_label}>
+                                Weight
+                            </label>
+                        </div>
+
+                        <PageNavigation goBackwards={this.goBackwards} goForwards = {this.goForwards} />
+
                     </div>
                     <div className={styles.form_page} onClick={ (e) => this.validatePage(e, 2) }>
                         <h2 className={styles.form_pageHeader}>Statistics</h2>
@@ -295,6 +316,8 @@ class CharacterForm extends react.Component {
                             min={0}
                             max={400}
                         />
+
+                        <PageNavigation goBackwards={this.goBackwards}/>
                         <input type="submit" value="Check" className={styles.form_button}>
                         </input>
                     </div>
