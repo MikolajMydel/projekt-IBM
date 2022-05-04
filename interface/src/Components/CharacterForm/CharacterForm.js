@@ -156,10 +156,12 @@ class CharacterForm extends react.Component {
             "pageNumber": 0,
             "pagesValidity": [false, false, false],
 
-            charactersData: sample,
+            "charactersData": sample,
+            "editedCharacter": undefined,
 
         }
 
+        this.ref = react.createRef();
         this.pagesQuantity = 3;
     }
 
@@ -192,10 +194,63 @@ class CharacterForm extends react.Component {
 
     addCharacter = (characterInfo) => {
         const charactersCopy = [...this.state.charactersData];
-        charactersCopy.push(characterInfo);
+        console.log(this.state.editedCharacter);
+        if (typeof this.state.editedCharacter === "undefined") charactersCopy.push(characterInfo);
+        else charactersCopy[this.state.editedCharacter] = characterInfo;
 
         this.setState({
             "charactersData": charactersCopy,
+        });
+
+        this.resetForm();
+    }
+
+    removeCharacter = (characterIndex) => {
+        const charactersCopy = [...this.state.charactersData];
+        charactersCopy.splice(characterIndex, 1);
+        this.setState({
+            "charactersData": charactersCopy,
+        });
+    }
+
+    editCharacter = (characterIndex) => {
+        const characterInfo = this.state.charactersData[characterIndex];
+
+        const childNodes = Array.from(this.ref.current.childNodes);
+        const childInputs = [];
+
+        while ( childNodes.length !== 0 ){
+            const node = childNodes.pop();
+            if (node.tagName){
+                const nodeType = node.tagName.toLowerCase();
+
+                if ((nodeType === "input")
+                    && (node.type === "number" || node.type === "text"))
+                    childInputs.push(node);
+                else {
+                    childNodes.push( ...node.childNodes );
+                }
+            }
+        }
+
+        childInputs.reverse();
+
+        for (let inputIndex in childInputs){
+            childInputs[inputIndex].value = characterInfo[inputIndex];
+        }
+
+        this.setState({
+            "editedCharacter": characterIndex,
+            "pagesValidity": [true, true, true],
+        });
+    }
+
+    resetForm = () => {
+        this.ref.current.reset();
+        this.changePage(0);
+
+        this.setState({
+            "pagesValidity": [false, false, false],
         })
     }
 
@@ -288,6 +343,8 @@ class CharacterForm extends react.Component {
                             // variable needed to paginate using css
                             "--page-number": this.state.pageNumber,
                         }}
+
+                        ref={this.ref}
                     >
                         <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 0) }>
                             <h2 className={styles.form_pageHeader}>Personal data</h2>
@@ -453,6 +510,8 @@ class CharacterForm extends react.Component {
                 <CharactersList
                     characters={this.state.charactersData}
                     check={this.checkCharactersAlignment}
+                    removeCharacter={this.removeCharacter}
+                    editCharacter={this.editCharacter}
                 />
             </>
         )

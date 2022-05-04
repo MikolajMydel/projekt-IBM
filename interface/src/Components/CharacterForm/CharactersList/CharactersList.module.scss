@@ -5,7 +5,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     flex-direction: column;
 
 
@@ -32,6 +32,11 @@
     &Characters {
         overflow-y: scroll;
         width: 100%;
+    }
+
+    &Button {
+        position: absolute;
+        bottom: 5px;
     }
 }
 

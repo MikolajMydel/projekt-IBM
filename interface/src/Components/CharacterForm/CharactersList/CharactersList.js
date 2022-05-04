@@ -7,13 +7,23 @@ class CharactersList extends react.Component {
             <div className={styles.List}>
                 <h1 className={styles.ListHeader}>Added characters</h1>
                 <div className={styles.ListCharacters}>
-                    { this.props.characters.map((character) => {
+                    { this.props.characters.map((character, index) => {
                         return (
                             <div className={styles.Character}>
                                 {character[0]}
                                 <div className={styles.CharacterButtons}>
-                                    <button className={styles.CharacterEdit}>edit</button>
-                                    <button className={styles.CharacterRemove}>rem</button>
+                                    <button
+                                        className={styles.CharacterEdit}
+                                        onClick={() => this.props.editCharacter(index)}
+                                    >
+                                        edit
+                                    </button>
+                                    <button
+                                        className={styles.CharacterRemove}
+                                        onClick={() => this.props.removeCharacter(index)}
+                                    >
+                                        rem
+                                    </button>
                                 </div>
                             </div>
                         )
