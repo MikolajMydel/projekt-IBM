@@ -1,7 +1,9 @@
 import {eyeColors, skinColors, hairColors, races} from "./datalists.js";
 import styles from "./CharacterForm.module.scss";
 import react from 'react';
+
 import InputWithUnit from "./InputWithUnit/InputWithUnit";
+import InputRange from "./InputRange/InputRange.js";
 
 const extractFormData = (form, fields) => {
     const formData = {};
@@ -227,8 +229,7 @@ class CharacterForm extends react.Component {
                             placeholder=" "
                             name="height"
                             unit="cm"
-                            max="1000"
-                            min="1"
+                            min="0"
                             required={true}
                         />
                         <label className={styles.form_label}>
@@ -243,8 +244,7 @@ class CharacterForm extends react.Component {
                                 placeholder=" "
                                 name="weight"
                                 unit="kg"
-                                max="10000"
-                                min="0.01"
+                                min="0"
                                 required={true}
                         />
                         <label className={styles.form_label}>
@@ -254,47 +254,47 @@ class CharacterForm extends react.Component {
                     </div>
                     <div className={styles.form_page} onClick={ (e) => this.validatePage(e, 2) }>
                         <h2 className={styles.form_pageHeader}>Statistics</h2>
-                        <div className={styles.form_range}>
-                            <label>
-                                Intelligence
-                            </label><br/>
-                            <input required type="range" name="intelligence" />
-                        </div>
+                        <InputRange
+                            required={true}
+                            name="intelligence"
+                            min={0}
+                            max={400}
+                        />
 
-                        <div className={styles.form_range}>
-                            <label>
-                                Strength
-                            </label><br/>
-                            <input required type="range" name="strength" />
-                        </div>
+                        <InputRange
+                            required={true}
+                            name="strength"
+                            min={0}
+                            max={400}
+                        />
 
-                        <div className={styles.form_range}>
-                            <label>
-                                Speed
-                            </label><br/>
-                            <input required type="range" name="speed" />
-                        </div>
+                        <InputRange
+                            required={true}
+                            name="speed"
+                            min={0}
+                            max={400}
+                        />
 
-                        <div className={styles.form_range}>
-                            <label>
-                                Durability
-                            </label><br/>
-                            <input required type="range" name="durability" />
-                        </div>
+                        <InputRange
+                            required={true}
+                            name="durability"
+                            min={0}
+                            max={400}
+                        />
 
-                        <div className={styles.form_range}>
-                            <label>
-                                Power
-                            </label><br/>
-                            <input required type="range" name="power" />
-                        </div>
+                        <InputRange
+                            required={true}
+                            name="power"
+                            min={0}
+                            max={400}
+                        />
 
-                        <div className={styles.form_range}>
-                            <label>
-                                Combat
-                            </label><br/>
-                            <input required type="range" name="combat" />
-                        </div>
+                        <InputRange
+                            required={true}
+                            name="combat"
+                            min={0}
+                            max={400}
+                        />
                         <input type="submit" value="Check" className={styles.form_button}>
                         </input>
                     </div>
