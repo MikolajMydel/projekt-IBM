@@ -5,6 +5,7 @@ import react from 'react';
 import InputWithUnit from "./InputWithUnit/InputWithUnit";
 import InputRange from "./InputRange/InputRange.js";
 import PageNavigation from "./PageNavigation/PageNavigation.js";
+import CharactersList from "./CharactersList/CharactersList";
 
 const extractFormData = (form, fields) => {
     const formData = {};
@@ -20,7 +21,7 @@ const extractFormData = (form, fields) => {
 
     formData["total"] = 0;
     for (let parameter of stats){
-        formData["total"] += formData[parameter];
+        formData["total"] += parseInt(formData[parameter]);
     }
 
     return formData;
@@ -42,6 +43,111 @@ async function postData(url, data){
     return response.json();
 }
 
+const sample = [
+    [
+        "spider-man",
+        "male",
+        "green",
+        "human / radiation",
+        "no hair",
+        "silver",
+        "123",
+        "123",
+        "258",
+        "200",
+        "200",
+        "200",
+        "200",
+        "200",
+        1258
+    ],
+    [
+        "spider-man",
+        "male",
+        "green",
+        "human / radiation",
+        "no hair",
+        "silver",
+        "123",
+        "123",
+        "258",
+        "200",
+        "200",
+        "200",
+        "200",
+        "200",
+        1258
+    ],
+    [
+        "spider-man",
+        "male",
+        "green",
+        "human / radiation",
+        "no hair",
+        "silver",
+        "123",
+        "123",
+        "258",
+        "200",
+        "200",
+        "200",
+        "200",
+        "200",
+        1258
+    ],
+    [
+        "spider-man",
+        "male",
+        "green",
+        "human / radiation",
+        "no hair",
+        "silver",
+        "123",
+        "123",
+        "258",
+        "200",
+        "200",
+        "200",
+        "200",
+        "200",
+        1258
+    ],
+    [
+        "spider-man",
+        "male",
+        "green",
+        "human / radiation",
+        "no hair",
+        "silver",
+        "123",
+        "123",
+        "258",
+        "200",
+        "200",
+        "200",
+        "200",
+        "200",
+        1258
+    ],
+    [
+        "spider-man",
+        "male",
+        "green",
+        "human / radiation",
+        "no hair",
+        "silver",
+        "123",
+        "123",
+        "258",
+        "200",
+        "200",
+        "200",
+        "200",
+        "200",
+        1258
+    ]
+]
+
 class CharacterForm extends react.Component {
 
     constructor() {
@@ -49,6 +155,9 @@ class CharacterForm extends react.Component {
         this.state = {
             "pageNumber": 0,
             "pagesValidity": [false, false, false],
+
+            charactersData: sample,
+
         }
 
         this.pagesQuantity = 3;
@@ -60,13 +169,14 @@ class CharacterForm extends react.Component {
         "strength", "speed", "durability", "power", "combat"
     ]
 
-    onSubmit = (e) => {
+    checkCharactersAlignment  = (e) => {
         e.preventDefault();
-        const characterInfo = extractFormData(e.target, this.fields);
+
+        const characters = this.state.charactersData;
 
         const payload = {"input_data":
-            [{"fields": Object.keys(characterInfo),
-            "values": [Object.values(characterInfo)]
+            [{"fields": Object.keys(characters[0]),
+            "values": characters
             }]
         }
 
@@ -78,6 +188,22 @@ class CharacterForm extends react.Component {
                 }
             }
         )
+    }
+
+    addCharacter = (characterInfo) => {
+        const charactersCopy = [...this.state.charactersData];
+        charactersCopy.push(characterInfo);
+
+        this.setState({
+            "charactersData": charactersCopy,
+        })
+    }
+
+    onSubmit = (e) => {
+        e.preventDefault();
+        const characterInfo = extractFormData(e.target, this.fields);
+
+        this.addCharacter(Object.values(characterInfo));
     }
 
     changePage = (pageNumber) => {
@@ -130,199 +256,205 @@ class CharacterForm extends react.Component {
 
     render() {
         return (
-            <div className={styles.form_wrapper}>
-                <div className={styles.form_navigation}>
-                    <button className={`
-                        ${styles.form_navigationButton}
-                        ${this.state.pagesValidity[0] ? styles.form_navigationButtonValid : ""}
-                    `}
-                        onClick={ () => this.changePage(0)}
-                    ></button>
+            <>
+                <div className={styles.form_wrapper}>
+                    <div className={styles.form_navigation}>
+                        <button className={`
+                            ${styles.form_navigationButton}
+                            ${this.state.pagesValidity[0] ? styles.form_navigationButtonValid : ""}
+                        `}
+                            onClick={ () => this.changePage(0)}
+                        ></button>
 
-                    <button className={`
-                        ${styles.form_navigationButton}
-                        ${this.state.pagesValidity[1] ? styles.form_navigationButtonValid : ""}
-                    `}
-                        onClick={ () => this.changePage(1)}
-                    ></button>
+                        <button className={`
+                            ${styles.form_navigationButton}
+                            ${this.state.pagesValidity[1] ? styles.form_navigationButtonValid : ""}
+                        `}
+                            onClick={ () => this.changePage(1)}
+                        ></button>
 
-                    <button className={`
-                        ${styles.form_navigationButton}
-                        ${this.state.pagesValidity[2] ? styles.form_navigationButtonValid : ""}
-                    `}
-                        onClick={ () => this.changePage(2)}
-                    ></button>
+                        <button className={`
+                            ${styles.form_navigationButton}
+                            ${this.state.pagesValidity[2] ? styles.form_navigationButtonValid : ""}
+                        `}
+                            onClick={ () => this.changePage(2)}
+                        ></button>
 
-                </div>
-                <form action="." method="GET"
-                    className={styles.form}
-                    onSubmit={this.onSubmit}
-                    style={{
-                        // variable needed to paginate using css
-                        "--page-number": this.state.pageNumber,
-                    }}
-                >
-                    <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 0) }>
-                        <h2 className={styles.form_pageHeader}>Personal data</h2>
-                        <div className={styles.form_group}>
-                            <input required type="text" className={styles.form_input} placeholder=" "
-                                name="name"
-                                />
-                            <label className={styles.form_label}>
-                                Name
-                            </label>
-                        </div>
-
-                        <div className={styles.form_group}>
-                            <input required type="text" className={styles.form_input} placeholder=" "
-                                name="gender" />
-                            <label className={styles.form_label}>
-                                Gender
-                            </label>
-                        </div>
-                        <PageNavigation goForwards={this.goForwards} />
                     </div>
-                    <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 1)}>
-                        <h2 className={styles.form_pageHeader}>Appearance</h2>
-                        <div className={styles.form_group}>
-                            <input required type="text" list="eyeColor" className={styles.form_input} placeholder=" "
-                                name="eyeColor"/>
-                            <label className={styles.form_label}>
-                                Eye color
-                            </label>
+                    <form action="." method="GET"
+                        className={styles.form}
+                        onSubmit={this.onSubmit}
+                        style={{
+                            // variable needed to paginate using css
+                            "--page-number": this.state.pageNumber,
+                        }}
+                    >
+                        <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 0) }>
+                            <h2 className={styles.form_pageHeader}>Personal data</h2>
+                            <div className={styles.form_group}>
+                                <input required type="text" className={styles.form_input} placeholder=" "
+                                    name="name"
+                                    />
+                                <label className={styles.form_label}>
+                                    Name
+                                </label>
+                            </div>
 
-                            <datalist id="eyeColor">
-                                {eyeColors.map((value) => {
-                                    return <option value={value.toLowerCase()} />
-                                })}
-                            </datalist>
+                            <div className={styles.form_group}>
+                                <input required type="text" className={styles.form_input} placeholder=" "
+                                    name="gender" />
+                                <label className={styles.form_label}>
+                                    Gender
+                                </label>
+                            </div>
+                            <PageNavigation goForwards={this.goForwards} />
                         </div>
+                        <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 1)}>
+                            <h2 className={styles.form_pageHeader}>Appearance</h2>
+                            <div className={styles.form_group}>
+                                <input required type="text" list="eyeColor" className={styles.form_input} placeholder=" "
+                                    name="eyeColor"/>
+                                <label className={styles.form_label}>
+                                    Eye color
+                                </label>
 
-                        <div className={styles.form_group}>
-                            <input required type="text" list="race" className={styles.form_input} placeholder=" "
-                                name="race" />
-                            <label className={styles.form_label}>
-                                Race
-                            </label>
-
-                            <datalist id="race">
-                                {races.map((value) => {
-                                    return <option value={value.toLowerCase()} />
-                                })}
-                            </datalist>
-                        </div>
-
-                        <div className={styles.form_group}>
-                            <input required type="text" list="hairColor" className={styles.form_input} placeholder=" "
-                                name="hairColor"/>
-                            <label className={styles.form_label}>
-                                Hair color
-                            </label>
-
-                            <datalist id="hairColor">
-                                {hairColors.map((value) => {
+                                <datalist id="eyeColor">
+                                    {eyeColors.map((value) => {
                                         return <option value={value.toLowerCase()} />
-                                })}
-                            </datalist>
-                        </div>
+                                    })}
+                                </datalist>
+                            </div>
 
-                        <div className={styles.form_group}>
-                            <input required type="text" list="skinColor" className={styles.form_input} placeholder=" "
-                                name="skinColor" />
-                            <label className={styles.form_label}>
-                                Skin color
-                            </label>
+                            <div className={styles.form_group}>
+                                <input required type="text" list="race" className={styles.form_input} placeholder=" "
+                                    name="race" />
+                                <label className={styles.form_label}>
+                                    Race
+                                </label>
 
-                            <datalist id="skinColor">
-                                {skinColors.map((value) => {
+                                <datalist id="race">
+                                    {races.map((value) => {
                                         return <option value={value.toLowerCase()} />
-                                })}
-                            </datalist>
-                        </div>
+                                    })}
+                                </datalist>
+                            </div>
 
-                        <div className={styles.form_group}>
-                            <InputWithUnit
-                                type="number"
-                                className={styles.form_input}
-                                placeholder=" "
-                                name="height"
-                                unit="cm"
-                                min="0"
-                                required={true}
-                            />
-                            <label className={styles.form_label}>
-                                Height
-                            </label>
-                        </div>
+                            <div className={styles.form_group}>
+                                <input required type="text" list="hairColor" className={styles.form_input} placeholder=" "
+                                    name="hairColor"/>
+                                <label className={styles.form_label}>
+                                    Hair color
+                                </label>
 
-                        <div className={styles.form_group}>
-                            <InputWithUnit
+                                <datalist id="hairColor">
+                                    {hairColors.map((value) => {
+                                            return <option value={value.toLowerCase()} />
+                                    })}
+                                </datalist>
+                            </div>
+
+                            <div className={styles.form_group}>
+                                <input required type="text" list="skinColor" className={styles.form_input} placeholder=" "
+                                    name="skinColor" />
+                                <label className={styles.form_label}>
+                                    Skin color
+                                </label>
+
+                                <datalist id="skinColor">
+                                    {skinColors.map((value) => {
+                                            return <option value={value.toLowerCase()} />
+                                    })}
+                                </datalist>
+                            </div>
+
+                            <div className={styles.form_group}>
+                                <InputWithUnit
                                     type="number"
                                     className={styles.form_input}
                                     placeholder=" "
-                                    name="weight"
-                                    unit="kg"
+                                    name="height"
+                                    unit="cm"
                                     min="0"
                                     required={true}
-                            />
-                            <label className={styles.form_label}>
-                                Weight
-                            </label>
+                                />
+                                <label className={styles.form_label}>
+                                    Height
+                                </label>
+                            </div>
+
+                            <div className={styles.form_group}>
+                                <InputWithUnit
+                                        type="number"
+                                        className={styles.form_input}
+                                        placeholder=" "
+                                        name="weight"
+                                        unit="kg"
+                                        min="0"
+                                        required={true}
+                                />
+                                <label className={styles.form_label}>
+                                    Weight
+                                </label>
+                            </div>
+
+                            <PageNavigation goBackwards={this.goBackwards} goForwards = {this.goForwards} />
+
                         </div>
+                        <div className={styles.form_page} onClick={ (e) => this.validatePage(e, 2) }>
+                            <h2 className={styles.form_pageHeader}>Statistics</h2>
+                            <InputRange
+                                required={true}
+                                name="intelligence"
+                                min={0}
+                                max={400}
+                            />
 
-                        <PageNavigation goBackwards={this.goBackwards} goForwards = {this.goForwards} />
+                            <InputRange
+                                required={true}
+                                name="strength"
+                                min={0}
+                                max={400}
+                            />
 
-                    </div>
-                    <div className={styles.form_page} onClick={ (e) => this.validatePage(e, 2) }>
-                        <h2 className={styles.form_pageHeader}>Statistics</h2>
-                        <InputRange
-                            required={true}
-                            name="intelligence"
-                            min={0}
-                            max={400}
-                        />
+                            <InputRange
+                                required={true}
+                                name="speed"
+                                min={0}
+                                max={400}
+                            />
 
-                        <InputRange
-                            required={true}
-                            name="strength"
-                            min={0}
-                            max={400}
-                        />
+                            <InputRange
+                                required={true}
+                                name="durability"
+                                min={0}
+                                max={400}
+                            />
 
-                        <InputRange
-                            required={true}
-                            name="speed"
-                            min={0}
-                            max={400}
-                        />
+                            <InputRange
+                                required={true}
+                                name="power"
+                                min={0}
+                                max={400}
+                            />
 
-                        <InputRange
-                            required={true}
-                            name="durability"
-                            min={0}
-                            max={400}
-                        />
+                            <InputRange
+                                required={true}
+                                name="combat"
+                                min={0}
+                                max={400}
+                            />
 
-                        <InputRange
-                            required={true}
-                            name="power"
-                            min={0}
-                            max={400}
-                        />
-
-                        <InputRange
-                            required={true}
-                            name="combat"
-                            min={0}
-                            max={400}
-                        />
-
-                        <PageNavigation goBackwards={this.goBackwards}/>
-                        <input type="submit" value="Check" className={styles.form_button}>
-                        </input>
-                    </div>
-                </form>
-            </div>
+                            <PageNavigation goBackwards={this.goBackwards}/>
+                            <input type="submit" value="Add character" className={styles.form_button}>
+                            </input>
+                        </div>
+                    </form>
+                </div>
+                <CharactersList
+                    characters={this.state.charactersData}
+                    check={this.checkCharactersAlignment}
+                />
+            </>
         )
     }
 }
