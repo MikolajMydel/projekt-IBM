@@ -361,7 +361,10 @@ class CharacterForm extends react.Component {
 
                         ref={this.ref}
                     >
-                        <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 0) }>
+                        <div className={styles.form_page}
+                            onKeyDown={ (e) => this.validatePage(e, 0) }
+                            onBlur={ (e) => this.validatePage(e, 0)}
+                            >
                             <h2 className={styles.form_pageHeader}>Personal data</h2>
                             <div className={styles.form_group}>
                                 <input required type="text" className={styles.form_input} placeholder=" "
@@ -381,7 +384,9 @@ class CharacterForm extends react.Component {
                             </div>
                             <PageNavigation goForwards={this.goForwards} />
                         </div>
-                        <div className={styles.form_page} onKeyDown={ (e) => this.validatePage(e, 1)}>
+                        <div className={styles.form_page}
+                            onBlur={ (e) => this.validatePage(e, 1)}
+                            onKeyDown={ (e) => this.validatePage(e, 1)}>
                             <h2 className={styles.form_pageHeader}>Appearance</h2>
                             <div className={styles.form_group}>
                                 <input required type="text" list="eyeColor" className={styles.form_input} placeholder=" "
@@ -469,7 +474,7 @@ class CharacterForm extends react.Component {
                                 </label>
                             </div>
 
-                            <PageNavigation goBackwards={this.goBackwards} goForwards = {this.goForwards} />
+                            <PageNavigation goBackwards={this.goBackwards} goForwards={this.goForwards} />
 
                         </div>
                         <div className={styles.form_page} onClick={ (e) => this.validatePage(e, 2) }>
