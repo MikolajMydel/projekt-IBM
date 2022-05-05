@@ -1,5 +1,7 @@
 import react from "react";
 import styles from "./CharactersList.module.scss";
+import { RiDeleteBin6Line } from 'react-icons/ri';
+import { BiPencil } from "react-icons/bi";
 
 class CharactersList extends react.Component {
     render(){
@@ -16,13 +18,13 @@ class CharactersList extends react.Component {
                                         className={styles.CharacterEdit}
                                         onClick={() => this.props.editCharacter(index)}
                                     >
-                                        edit
+                                        <BiPencil />
                                     </button>
                                     <button
                                         className={styles.CharacterRemove}
                                         onClick={() => this.props.removeCharacter(index)}
                                     >
-                                        rem
+                                        <RiDeleteBin6Line />
                                     </button>
                                 </div>
                             </div>
