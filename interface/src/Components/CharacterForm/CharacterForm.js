@@ -509,12 +509,14 @@ class CharacterForm extends react.Component {
                         </div>
                     </form>
                 </div>
-                <CharactersList
-                    characters={this.state.charactersData}
-                    check={this.checkCharactersAlignment}
-                    removeCharacter={this.removeCharacter}
-                    editCharacter={this.editCharacter}
-                />
+                {this.state.charactersData.length !== 0 ?
+                    <CharactersList
+                        characters={this.state.charactersData}
+                        check={this.checkCharactersAlignment}
+                        removeCharacter={this.removeCharacter}
+                        editCharacter={this.editCharacter}
+                    /> : ""
+                }
             </>
         )
     }
