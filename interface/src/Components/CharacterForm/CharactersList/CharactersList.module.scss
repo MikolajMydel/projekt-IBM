@@ -40,6 +40,14 @@
     }
 }
 
+@keyframes opacity {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
 .Character {
     width: 100%;
     font-size: 1.2rem;
@@ -52,6 +60,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &Prediction {
+        font-weight: bold;
+        animation: opacity 1s ease-in-out;
+    }
 
     &Edit {
 

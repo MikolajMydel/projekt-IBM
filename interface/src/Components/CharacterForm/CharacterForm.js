@@ -159,6 +159,7 @@ class CharacterForm extends react.Component {
             "charactersData": sample,
             "editedCharacter": undefined,
 
+            "predictions": [],
         }
 
         this.fields = [
@@ -186,22 +187,34 @@ class CharacterForm extends react.Component {
 
         postData("/api/character", payload).then(
             data => {
+                const predictionsArray = [];
                 const predictions = data.predictions;
                 for (let prediction of predictions[0].values){
-                    alert(prediction[0]);
+                    predictionsArray.push(prediction[0]);
                 }
+
+                this.setState({
+                    "predictions": predictionsArray
+                });
+
             }
         )
     }
 
     addCharacter = (characterInfo) => {
         const charactersCopy = [...this.state.charactersData];
+        const predictionsCopy = [...this.state.predictions];
+        const editedCharacter = this.state.editedCharacter;
 
-        if (typeof this.state.editedCharacter === "undefined") charactersCopy.push(characterInfo);
-        else charactersCopy[this.state.editedCharacter] = characterInfo;
+        if (typeof editedCharacter === "undefined") charactersCopy.push(characterInfo);
+        else {
+            charactersCopy[editedCharacter] = characterInfo;
+            predictionsCopy[editedCharacter] = undefined;
+        }
 
         this.setState({
             "charactersData": charactersCopy,
+            "predictions": predictionsCopy,
         });
 
         this.resetForm();
@@ -515,6 +528,8 @@ class CharacterForm extends react.Component {
                         check={this.checkCharactersAlignment}
                         removeCharacter={this.removeCharacter}
                         editCharacter={this.editCharacter}
+
+                        predictions={this.state.predictions}
                     /> : ""
                 }
             </>
