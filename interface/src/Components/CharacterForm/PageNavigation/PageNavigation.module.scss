@@ -1,16 +1,14 @@
 .Navigation {
     margin-top: 10px;
     margin-bottom: 10px;
-    
-    
-    
+
     &Backwards {
         font-size: 14px;
         color: white;
         background: none;
         border: none;
         font-size: 18px;
-    
+
         &:hover{
             color: #0099ff;
         }
@@ -27,5 +25,8 @@
         }
     }
 
-    
+    &Backwards:hover, &Forwards:hover {
+        cursor: pointer;
+    }
+
 }
