@@ -8,112 +8,7 @@ import PageNavigation from "./PageNavigation/PageNavigation.js";
 import CharactersList from "./CharactersList/CharactersList";
 
 import * as Api from "./api.js";
-
-const sample = [
-    [
-        "spider-man",
-        "male",
-        "green",
-        "human / radiation",
-        "no hair",
-        "silver",
-        "123",
-        "123",
-        "258",
-        "200",
-        "200",
-        "200",
-        "200",
-        "200",
-        1258
-    ],
-    [
-        "spider-man",
-        "male",
-        "green",
-        "human / radiation",
-        "no hair",
-        "silver",
-        "123",
-        "123",
-        "258",
-        "200",
-        "200",
-        "200",
-        "200",
-        "200",
-        1258
-    ],
-    [
-        "spider-man",
-        "male",
-        "green",
-        "human / radiation",
-        "no hair",
-        "silver",
-        "123",
-        "123",
-        "258",
-        "200",
-        "200",
-        "200",
-        "200",
-        "200",
-        1258
-    ],
-    [
-        "spider-man",
-        "male",
-        "green",
-        "human / radiation",
-        "no hair",
-        "silver",
-        "123",
-        "123",
-        "258",
-        "200",
-        "200",
-        "200",
-        "200",
-        "200",
-        1258
-    ],
-    [
-        "spider-man",
-        "male",
-        "green",
-        "human / radiation",
-        "no hair",
-        "silver",
-        "123",
-        "123",
-        "258",
-        "200",
-        "200",
-        "200",
-        "200",
-        "200",
-        1258
-    ],
-    [
-        "spider-man",
-        "male",
-        "green",
-        "human / radiation",
-        "no hair",
-        "silver",
-        "123",
-        "123",
-        "258",
-        "200",
-        "200",
-        "200",
-        "200",
-        "200",
-        1258
-    ]
-]
-
+import examples from "./characterExamples.js";
 class CharacterForm extends react.Component {
 
     constructor() {
@@ -122,7 +17,7 @@ class CharacterForm extends react.Component {
             "pageNumber": 0,
             "pagesValidity": [false, false, false],
 
-            "charactersData": sample,
+            "charactersData": examples,
             "editedCharacter": undefined,
 
             "predictions": [],
