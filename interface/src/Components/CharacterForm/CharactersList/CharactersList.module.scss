@@ -15,7 +15,7 @@
     top: 30%;
     right: 18%;
     width: 300px;
-    height: 300px;
+    height: 340px;
 
     background-color: rgba(46, 46, 46, 0.95);
     border-radius: 25px;
@@ -36,7 +36,18 @@
 
     &Button {
         position: absolute;
-        bottom: 5px;
+        bottom: 10px;
+        color: #43d33e;
+        background: none;
+        padding: 10px 26px;
+        border: 2px solid #43d33e;
+
+        &:hover{
+            color: white;
+            background: #43d33e;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
     }
 }
 
@@ -67,10 +78,33 @@
     }
 
     &Edit {
-
+        padding-top: 3px;
+        margin-right: 5px;
+        font-size: 1.2rem;
+        border: 2px solid #ffbb00; 
+        color:#ffbb00; 
+        background: none;
+        &:hover{
+            color: white;
+            background: #ffbb00;
+            transition: 0.3s ease-in-out;
+        }
     }
 
     &Remove {
+        font-size: 1.2rem;
+        border: 2px solid #ff0000;
+        color:#ff0000; 
+        background: none;
+        padding-top: 3px;
+        &:hover{
+            color: white;
+            background: #ff0000;
+            transition: 0.3s ease-in-out;
+        }
+    }
 
+    &Edit:hover, &Remove:hover {
+        cursor: pointer;
     }
 }

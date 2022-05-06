@@ -193,6 +193,10 @@ body{
     border: 2px solid #0099ff;
     transition: 0.25s;
     color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .form_button:hover,
