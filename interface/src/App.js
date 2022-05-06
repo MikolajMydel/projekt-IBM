@@ -7,6 +7,8 @@ class App extends React.Component {
   };
 
   componentDidMount() {
+    document.title = "Marvel Bad Characters";
+
     this.callBackendAPI()
       .then(res => this.setState({ data: res.express }))
       .catch(err => console.log(err));
