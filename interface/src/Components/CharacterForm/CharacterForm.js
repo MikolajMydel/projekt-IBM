@@ -7,41 +7,7 @@ import InputRange from "./InputRange/InputRange.js";
 import PageNavigation from "./PageNavigation/PageNavigation.js";
 import CharactersList from "./CharactersList/CharactersList";
 
-const extractFormData = (form, fields) => {
-    const formData = {};
-    let inputValue;
-
-    for (let field of fields){
-        inputValue = form[field].value;
-        formData[field] = inputValue;
-    }
-
-    const stats = ["intelligence",
-    "strength", "speed", "durability", "power", "combat"]
-
-    formData["total"] = 0;
-    for (let parameter of stats){
-        formData["total"] += parseInt(formData[parameter]);
-    }
-
-    return formData;
-}
-
-async function postData(url, data){
-    const response = await fetch(url, {
-        method: 'POST',
-        mode: 'cors',
-
-        headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-
-        body: JSON.stringify(data),
-    });
-
-    return response.json();
-}
+import * as Api from "./api.js";
 
 const sample = [
     [
@@ -185,7 +151,7 @@ class CharacterForm extends react.Component {
             ]
         }
 
-        postData("/api/character", payload).then(
+        Api.postData("/api/character", payload).then(
             data => {
                 const predictionsArray = [];
                 const predictions = data.predictions;
@@ -271,7 +237,7 @@ class CharacterForm extends react.Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        const characterInfo = extractFormData(e.target, this.fields);
+        const characterInfo = Api.extractFormData(e.target, this.fields);
 
         this.addCharacter(Object.values(characterInfo));
     }
