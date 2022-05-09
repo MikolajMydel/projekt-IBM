@@ -68,9 +68,7 @@ const examples = [
     100.0,
     60.0,
     493.0,
-    ]
-
-
+    ],
 ]
 
 export default examples;
