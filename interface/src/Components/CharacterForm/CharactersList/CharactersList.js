@@ -53,6 +53,14 @@ class CharactersList extends react.Component {
                 <button className={styles.ListButton} onClick={this.props.check}>
                     Verify
                 </button>
+
+                {this.props.loading ?
+                    <div>
+                        LOADING
+                    </div>
+                    :
+                    ""
+                }
             </div>
         )
     }

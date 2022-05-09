@@ -35,6 +35,9 @@ class CharacterForm extends react.Component {
 
     checkCharactersAlignment = (e) => {
         e.preventDefault();
+        this.setState({
+            "loading": true
+        });
 
         const characters = this.state.charactersData;
         const payload = {"input_data":
@@ -55,7 +58,8 @@ class CharacterForm extends react.Component {
                 }
 
                 this.setState({
-                    "predictions": predictionsArray
+                    "predictions": predictionsArray,
+                    "loading": false,
                 });
 
             }
@@ -396,6 +400,7 @@ class CharacterForm extends react.Component {
                         editCharacter={this.editCharacter}
 
                         predictions={this.state.predictions}
+                        loading={this.state.loading}
                     /> : ""
                 }
             </>
