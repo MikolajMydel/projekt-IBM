@@ -55,9 +55,7 @@ class CharactersList extends react.Component {
                 </button>
 
                 {this.props.loading ?
-                    <div>
-                        LOADING
-                    </div>
+                    <div className={styles.lds_roller}><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                     :
                     ""
                 }
