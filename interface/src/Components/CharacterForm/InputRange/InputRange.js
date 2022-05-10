@@ -30,6 +30,9 @@ const InputRange = (props) => {
                 onChange={synchronize}
                 value={value}
 
+                min={props.min}
+                max={props.max}
+
                 className={styles.InputNumber}
             />
         </div>
