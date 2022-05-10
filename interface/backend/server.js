@@ -51,7 +51,8 @@ app.post("/api/character", (req, res) => {
 
         // NOTE: manually define and pass the array(s) of values to be scored in the next line
         const payload = JSON.stringify(req.body);
-        const scoring_url = "https://eu-de.ml.cloud.ibm.com/ml/v4/deployments/marvel_bad_characters1/predictions?version=2022-04-21";
+
+        const scoring_url = "https://eu-de.ml.cloud.ibm.com/ml/v4/deployments/41f7aa45-615f-4a92-beaf-a7a5d0d8ea5f/predictions?version=2022-04-27";
         apiPost(scoring_url, tokenResponse.access_token, payload, function (resp) {
             /*
             let parsedPostResponse;
