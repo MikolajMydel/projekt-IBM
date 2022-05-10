@@ -1,0 +1,31 @@
+.Input {
+    margin: 30px 0;
+    display: flex;
+    flex-flow: wrap;
+
+    &Label {
+        text-transform: capitalize;
+        width: 100%;
+        display: block;
+
+        color: #fff;
+    }
+
+    &Range {
+        width: 80%;
+        cursor: ew-resize;
+    }
+
+    &Number {
+        font-family: 'Poppins', sans-serif;
+
+        text-align: center;
+        font-size: 1.5em;
+        color: #fff;
+
+        width: 20%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+}

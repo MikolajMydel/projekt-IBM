@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: rgb(46, 46, 46);
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6e6e6e;
+    border-radius: 25px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #dddddd;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.form {
+    font-family: 'Poppins', sans-serif;
+
+    width: 300%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &_navigation {
+        position: absolute;
+
+        // above form
+        z-index: 1;
+        top: 0;
+        left: -10px;
+        right: -10px;
+        height: 50px;
+
+        &Button {
+            border: none;
+            border-right: 3px solid rgba(46, 46, 46, 0.95);
+            outline: none;
+            cursor: pointer;
+            width: 33%;
+            height: 100%;
+
+            position: relative;
+	        overflow: hidden;
+
+            &:before {
+
+                transform: scaleX(0);
+                transform-origin: left;
+
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                top: 0;
+                right: 0;
+
+                background-color: lime;
+                transition: all .5s ease-in-out;
+            }
+
+            &Valid:before {
+                transform: scaleX(100%);
+            }
+
+        }
+    }
+
+    &_page {
+        padding: 50px;
+
+        width: 33.3%;
+        height: 100%;
+
+        transition: transform .5s ease-in-out;
+        transform: translateX( calc(-100% * var(--page-number)) );
+
+        &Header {
+            font-size: 2rem;
+            color: #fff;
+
+            margin: 50px 0;
+            text-align: center;
+        }
+    }
+}
+
+.form_wrapper{
+    overflow: hidden;
+
+    position: relative;
+
+    width: 30%;
+    margin: 15px auto;
+    background-color: rgba(46, 46, 46, 0.95);
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(34, 34, 34, 0.9),0 5px 15px rgba(0,0,0, 0.7);
+}
+
+.form_group {
+    position:relative;
+
+    & + .form_group {
+        margin-top: 50px;
+    }
+}
+
+.form_label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    background-color: none;
+    z-index: 10;
+    transition: transform 150ms ease-out, font-size 150ms ease-out;
+    pointer-events: none;
+}
+
+.form_input {
+    font-family: 'Poppins', sans-serif;
+
+    position: relative;
+    padding: 12px 0px 5px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #0099ff;
+    transition: box-shadow 150ms ease-out;
+    padding-left: 10px;
+    color: white;
+    border-radius: 10px;
+
+    font-size: 1em;
+
+    &:hover{
+        border-color: #95d3fc;
+    }
+
+    &:focus {
+        border-color: #95d3fc;
+    }
+}
+
+.form_input:not(:placeholder-shown) ~ .form_label {
+    color: rgb(180, 180, 180);
+    transform: translateY(-125%);
+    font-size: .8em;
+}
+
+.form_input:focus ~ .form_label {
+    color: rgb(180, 180, 180);
+    transform: translateY(-125%);
+    font-size: .8em;
+}
+
+.form_button{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: 2px solid #0099ff;
+    transition: 0.25s;
+    color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.form_button:hover,
+.form_button:focus {
+    box-shadow: inset 0 -3.25em 0 0 #0099ff;
+}
+
+@media screen and (max-width: 1000px){
+    .form_wrapper{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .form_wrapper{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .form_wrapper{
+        width: 100%;
+
+        border-radius: 0;
+    }
+}
