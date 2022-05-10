@@ -3,11 +3,12 @@ import styles from "./CharactersList.module.scss";
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import { BiPencil } from "react-icons/bi";
 
+import {CSVLink} from "react-csv";
+
 class CharactersList extends react.Component {
 
     getPrediction = (index) => {
-        const prediction = this.props.predictions[index];
-
+        const prediction = this.props.characters[index][15];
         if (typeof prediction === "undefined") return "";
         else if (prediction) return "bad"
 
@@ -50,9 +51,23 @@ class CharactersList extends react.Component {
                         )
                     })}
                 </div>
-                <button className={styles.ListButton} onClick={this.props.check}>
-                    Verify
-                </button>
+
+                <div className={styles.ListButtons}>
+                    <button onClick={this.props.check}>
+                        Verify
+                    </button>
+
+                    <CSVLink
+                        data={this.props.characters}
+                        headers={this.props.characters[0] && this.props.characters[0].length > 15 ? this.props.fields.concat(["IsBad"]) : this.props.fields}
+                        filename={`${this.props.characters.length}_Marvel_characters.csv`}
+                    >
+                        <button>
+                            Export
+                        </button>
+                    </CSVLink>
+
+                </div>
 
                 {this.props.loading ?
                     <div className={styles.lds_roller}><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>

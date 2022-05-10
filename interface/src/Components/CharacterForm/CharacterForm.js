@@ -20,13 +20,12 @@ class CharacterForm extends react.Component {
             "charactersData": examples,
             "editedCharacter": undefined,
 
-            "predictions": [],
         }
 
         this.fields = [
             "name", "gender", "eyeColor", "race", "hairColor",
             "skinColor", "height", "weight", "intelligence",
-            "strength", "speed", "durability", "power", "combat"
+            "strength", "speed", "durability", "power", "combat", "total",
         ];
 
         this.ref = react.createRef();
@@ -40,46 +39,49 @@ class CharacterForm extends react.Component {
         });
 
         const characters = this.state.charactersData;
+        const charactersWithoutAlignment = [];
+
+        for (let character of characters){
+            charactersWithoutAlignment.push(character.slice(0, 15));
+        }
+
         const payload = {"input_data":
             [
             {
                 "fields": this.fields,
-                "values": characters
+                "values": charactersWithoutAlignment
             }
             ]
         }
 
         Api.postData("/api/character", payload).then(
             data => {
-                const predictionsArray = [];
                 const predictions = data.predictions;
-                for (let prediction of predictions[0].values){
-                    predictionsArray.push(prediction[0]);
+                const charactersCopy = [...this.state.charactersData];
+
+                for (let predictionIndex in predictions[0].values){
+                    charactersCopy[predictionIndex][15] = predictions[0].values[predictionIndex][0];
                 }
 
                 this.setState({
-                    "predictions": predictionsArray,
+                    "charactersData": charactersCopy,
                     "loading": false,
                 });
-
             }
         )
     }
 
     addCharacter = (characterInfo) => {
         const charactersCopy = [...this.state.charactersData];
-        const predictionsCopy = [...this.state.predictions];
         const editedCharacter = this.state.editedCharacter;
 
         if (typeof editedCharacter === "undefined") charactersCopy.push(characterInfo);
         else {
             charactersCopy[editedCharacter] = characterInfo;
-            predictionsCopy[editedCharacter] = undefined;
         }
 
         this.setState({
             "charactersData": charactersCopy,
-            "predictions": predictionsCopy,
         });
 
         this.resetForm();
@@ -398,9 +400,8 @@ class CharacterForm extends react.Component {
                         check={this.checkCharactersAlignment}
                         removeCharacter={this.removeCharacter}
                         editCharacter={this.editCharacter}
-
-                        predictions={this.state.predictions}
                         loading={this.state.loading}
+                        fields={this.fields}
                     /> : ""
                 }
             </>
