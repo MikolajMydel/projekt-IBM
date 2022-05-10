@@ -203,3 +203,23 @@ body{
 .form_button:focus {
     box-shadow: inset 0 -3.25em 0 0 #0099ff;
 }
+
+@media screen and (max-width: 1000px){
+    .form_wrapper{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .form_wrapper{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .form_wrapper{
+        width: 100%;
+
+        border-radius: 0;
+    }
+}

@@ -205,3 +205,37 @@
     }
   }
   
+  @media screen and (max-width: 1600px){
+    .List {
+      // width: 300px;
+      right: 5%;
+      // top: 110%;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    .List {
+      width: 70%;
+      right: 15%;
+      top: 110%;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .List {
+      width: 80%;
+      right: 10%;
+      top: 110%;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .List {
+      width: 100%;
+      right: 0%;
+      top: 110%;
+
+      border-radius: 0;
+    }
+  }
+  
